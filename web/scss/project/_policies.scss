@@ -1,0 +1,14 @@
+/* Policies */
+.sty-policies{
+    .sty-cont-policies-1{
+        margin-top: 6em;
+        margin-bottom: 6em;    
+    }
+    .sty-text{
+        @extend #sty-font-c-b-30;
+        color: $color-gray-6;
+        p{
+            margin-bottom: 1em;
+        }
+    }
+}

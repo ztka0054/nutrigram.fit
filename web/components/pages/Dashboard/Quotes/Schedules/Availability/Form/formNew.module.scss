@@ -1,0 +1,61 @@
+@import "../../../../../../../scss/variables";
+@import "../../../../../../../scss/components/fonts";
+
+
+.contInputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contInput{
+    width: 30%;
+    .tag {
+        @extend #sty-font-b-26;
+        color: $color-gray-1;
+        transition: 0.2s color ease;
+    }
+    .datePicker{
+        @extend #sty-font-n-27;
+        color: $color-gray-1;
+        width: 100%;
+        border: 0.07em solid $color-gray-3;
+        border-radius: 0.18em;
+        padding: 0.3em 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.contButtons{
+    margin-top: 3em;
+    display: flex;
+    justify-content: flex-end;
+    button{
+        @extend #sty-font-b-22;
+        border-style: none;
+        border: solid 1px $color-gray-1;
+        border-radius: 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3em 1.5em;
+        background-color: $color-white-0;
+        transition: ease-in-out 0.1s background-color;
+        &:not(:last-child){
+            margin-right: 0.8em;
+        }
+    }
+    .buttonCancel{
+        border-color: $color-second-1;
+        &:hover{
+            background-color: $color-second-1;
+            color: $color-white-0;
+        }
+    }
+    .buttonAccept{
+        border-color: $color-brand-2;
+        &:hover{
+            background-color: $color-brand-2;
+        }
+    }
+    
+}

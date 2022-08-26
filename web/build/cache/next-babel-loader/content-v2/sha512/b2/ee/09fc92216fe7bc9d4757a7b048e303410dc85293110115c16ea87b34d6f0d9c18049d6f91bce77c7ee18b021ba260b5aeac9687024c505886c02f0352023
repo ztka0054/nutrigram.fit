@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from \"./Section1\";","map":{"version":3,"sources":["C:/Users/alex9/Nutrigram_Web/web/components/pages/Home/Section1/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,YAAxB","sourcesContent":["export { default } from \"./Section1\";\r\n"]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,836 @@
+.sty-dashboard {
+    padding: 2em 6em 4em 5em;
+    .sty-cont-option-1 {
+        margin-bottom: 3em;
+    }
+    .sty-cont-option-2 {
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+    .sty-content-data-1 {
+        // margin-top: 5em;
+    }
+    .sty-cont-sub-1 {
+        margin-top: 3em;
+    }
+    .sty-cont-equivalent-1 {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .sty-dyna-title-1 {
+        @extend #sty-font-b-28;
+        color: $color-gray-1;
+        margin-bottom: 0.5em;
+    }
+    .sty-number-table {
+        @extend #sty-font-b-30;
+        color: $color-gray-1;
+    }
+    .style_add_button {
+        margin-bottom: 3em;
+    }
+    .sty-card-title {
+        @extend #sty-font-b-27;
+        border-radius: 0.5em 0.5em 0 0;
+        padding: 0.4em 1.5em;
+        background-color: $color-brand-4;
+        color: $color-white-0;
+        &.color-1 {
+            background-color: $color-brand-6;
+        }
+        &.margin-1 {
+            margin-top: 2em;
+        }
+    }
+    .sty-card-days {
+        @extend #sty-font-b-27;
+        border-radius: 0.5em 0.5em 0 0;
+        background-color: $color-brand-4;
+        color: $color-white-0;
+
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 0.2em;
+        grid-template-columns: repeat(7, 1fr);
+        .sty-day {
+            position: relative;
+            @extend #sty-font-b-24;
+            color: white;
+            height: 2.8em;
+            bottom: 0.2em;
+            left: 0.2em;
+            .sty-tag {
+                position: absolute;
+                bottom: 0.2em;
+                left: 0.6em;
+            }
+        }
+    }
+
+    .sty-card-menu-days {
+        @extend #sty-font-b-27;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 0.2em;
+        grid-template-columns: repeat(7, 1fr);
+        .sty-con-day {
+            position: relative;
+            cursor: pointer;
+            border: 0.05em solid $color-gray-5;
+            height: 10em;
+            transition: 0.2s background-color ease;
+            &:hover {
+                background-color: $color-brand-6;
+                .sty-cont-info {
+                    .sty-text {
+                        color: $color-white-0;
+                    }
+                }
+                .sty-cont-tag-1 {
+                    .sty-text {
+                        color: $color-white-0;
+                    }
+                }
+            }
+            .sty-con-name {
+                @extend #sty-font-b-22;
+                position: absolute;
+                color: $color-white-0;
+                background-color: $color-brand-1;
+                padding: 0.15em 0.6em;
+            }
+            .sty-cont-pic {
+                width: 100%;
+                height: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .sty-cont-info {
+                width: 100%;
+                height: 50%;
+                padding: 0.2em;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .sty-text {
+                    @extend #sty-font-n-20;
+                    color: $color-gray-1;
+                }
+            }
+            .sty-cont-tag-1 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .sty-icon {
+                    width: 1em;
+                    height: 1em;
+                    margin: auto;
+                    margin-bottom: 0.5em;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .sty-text {
+                    @extend #sty-font-b-22;
+                    color: $color-gray-4;
+                }
+            }
+        }
+    }
+
+    .sty-cont-form-1 {
+        margin-top: 2em;
+        .cont-buttons-form {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .sty-cont-doc-1 {
+        margin-top: 2em;
+    }
+    .sty-cont-table-1 {
+        .sty-table-1 {
+            min-width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            table-layout: fixed;
+            // tr:not(:first-child){
+            //     cursor: pointer;
+            // }
+            // tr:not(:first-child):hover{
+            //     th, td {
+            //         background-color: $color-brand-5;
+            //     }
+            // }
+            // tr:first-of-type{
+            //     border-bottom: 0.05em solid $color-gray-3;
+            // }
+            th,
+            td {
+                border-collapse: collapse;
+                padding: 0.7em;
+                text-align: center;
+                transition: 0.1s background-color ease;
+            }
+            td {
+                @extend #sty-font-n-26;
+                color: $color-gray-1;
+                &.sty-notResult {
+                    @extend #sty-font-n-27;
+                    color: $color-gray-7;
+                    padding-top: 2em;
+                    padding-bottom: 2em;
+                    &:hover {
+                        cursor: default;
+                        background-color: $color-white-0;
+                    }
+                }
+            }
+            th:nth-child(even),
+            td:nth-child(even) {
+                background-color: $color-white-6;
+            }
+            thead {
+                border-bottom: 0.05em solid $color-gray-3;
+                th {
+                    @extend #sty-font-b-27;
+                    color: $color-gray-1;
+                }
+            }
+            tbody {
+                tr {
+                    cursor: pointer;
+                    &:hover {
+                        th,
+                        td {
+                            background-color: $color-brand-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sty-all-pagination {
+        .sty-cont-pagination {
+            margin-top: 4em;
+            .sty-cont-pag {
+                .sty-pag-ele {
+                    cursor: pointer;
+                    user-select: none;
+                    @extend #sty-font-b-30;
+                    color: $color-gray-1;
+                    display: inline-block;
+                    margin: auto 0.5em;
+                    width: 1em;
+                    height: 1em;
+                    transition: 0.2s color ease;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover {
+                        color: $color-brand-6;
+                    }
+                    &.sty-select {
+                        color: $color-brand-6;
+                    }
+                }
+                .sty-pag-points {
+                    cursor: pointer;
+                    user-select: none;
+                    @extend #sty-font-b-30;
+                    color: $color-gray-1;
+                    display: inline-block;
+                    margin: auto 0.5em;
+                    width: 1em;
+                    height: 1em;
+                }
+            }
+            .sty-cont-total {
+                .sty-tag {
+                    @extend #sty-font-b-30;
+                    color: $color-gray-1;
+                    display: inline-block;
+                    margin-right: 0.5em;
+                }
+                .sty-data {
+                    @extend #sty-font-n-30;
+                    color: $color-gray-1;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .sty-info-tag {
+        margin-bottom: 2em;
+        .sty-tag {
+            @extend #sty-font-b-26;
+            color: $color-gray-1;
+        }
+        .sty-data {
+            @extend #sty-font-l-28;
+            color: $color-gray-1;
+        }
+        .sty-list {
+            @extend #sty-font-l-20;
+            color: $color-gray-1;
+        }
+    }
+    .sty-magin-b-1 {
+        margin-top: 4em;
+    }
+
+    .sty-card-section {
+        cursor: pointer;
+        border: 0.1em solid $color-gray-3;
+        width: 100%;
+        height: 13em;
+        padding: 1em;
+        margin-bottom: 3em;
+        text-align: center;
+        transition: 0.2s background-color ease;
+        &:hover {
+            background-color: $color-brand-6;
+            .sty-tag {
+                color: $color-white-0;
+            }
+        }
+        .sty-tag {
+            @extend #sty-font-b-28;
+            color: $color-gray-1;
+        }
+    }
+
+    .sty-cont-control-calendar {
+        width: fit-content;
+        .sty-year {
+            @extend #sty-font-b-30;
+            color: $color-white-7;
+        }
+        .sty-year {
+            @extend #sty-font-b-30;
+            color: $color-white-7;
+            text-align: center;
+        }
+        .sty-cont-month {
+            @extend #sty-font-b-30;
+            color: $color-gray-1;
+            min-width: 7.5em;
+            div:not(:first-child) {
+                display: inline-block;
+            }
+        }
+        .sty-month {
+            min-width: 5.5em;
+            text-align: center;
+        }
+        .sty-control {
+            cursor: pointer;
+            height: 1em;
+            width: 1em;
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+
+    .sty-cont-calendar {
+        .sty-content-quotes {
+        }
+        .sty-cont-option {
+            padding: 2em 0;
+        }
+    }
+    .sty-cont-row {
+        position: relative;
+        // z-index: $z-nivel-1;
+        background-color: $color-white-0;
+        max-width: 100%;
+        margin: 0.5em auto;
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(7, 1fr);
+        align-items: end;
+        .sty-button {
+            margin: 0.5em 0;
+        }
+        .sty-day-calendar {
+            position: relative;
+            .sty-cont-date {
+                cursor: pointer;
+                border: 0.1em solid $color-gray-3;
+                transition: 0.2s background-color ease;
+
+                &.sty-deact {
+                    .sty-notification {
+                        svg {
+                            color: $color-gray-7;
+                        }
+                    }
+                    .sty-day {
+                        color: $color-gray-7;
+                    }
+                    .sty-cont-quotes {
+                        .sty-quotes {
+                            .sty-time {
+                                color: $color-gray-7;
+                            }
+                            .sty-name {
+                                color: $color-gray-7;
+                            }
+                        }
+                    }
+                }
+                &.sty-today {
+                    border-color: $color-brand-2 !important;
+                    .sty-day {
+                        color: $color-brand-2;
+                    }
+                    background-color: $color-gray-7;
+                }
+                &.sty-select {
+                    .sty-notification {
+                        svg {
+                            color: $color-brand-6;
+                        }
+                    }
+                    .sty-day {
+                        background-color: $color-white-0;
+                    }
+                    .sty-cont-quotes {
+                        .sty-quotes {
+                            background-color: $color-brand-1;
+                            .sty-time {
+                                color: $color-white-0;
+                            }
+                            .sty-name {
+                                color: $color-white-0;
+                            }
+                        }
+                    }
+                }
+                &:hover,
+                &.active {
+                    background-color: $color-brand-6;
+                    border-color: $color-brand-6;
+                    .sty-notification {
+                        svg {
+                            color: $color-white-0;
+                        }
+                    }
+                    .sty-day {
+                        background-color: $color-brand-6;
+                        color: $color-white-0;
+                    }
+                    .sty-cont-quotes {
+                        .sty-quotes {
+                            .sty-time {
+                                color: $color-white-0;
+                            }
+                            .sty-name {
+                                color: $color-white-0;
+                            }
+                        }
+                    }
+                }
+                .sty-notification {
+                    position: absolute;
+                    top: 1em;
+                    left: 1.5em;
+                    width: 2em;
+                    height: auto;
+                    svg {
+                        color: $color-brand-6;
+                    }
+                }
+                .sty-day {
+                    @extend #sty-font-b-30;
+                    color: $color-gray-1;
+                    width: 100%;
+                    padding: 0.2em 0.5em;
+                    text-align: right;
+                }
+                .sty-cont-quotes {
+                    position: relative;
+                    width: 100%;
+                    height: 11em;
+                    overflow-y: scroll;
+                    padding: 0;
+                    // margin-bottom: 2em;
+                    text-align: right;
+                    border-top: solid 0.01em $color-gray-5;
+                    .sty-quotes {
+                        padding: 0.5em 02em;
+                        margin: 0.5em 0;
+                        .sty-time {
+                            @extend #sty-font-l-18;
+                        }
+                        .sty-name {
+                            @extend #sty-font-n-20;
+                        }
+                    }
+                    &::-webkit-scrollbar {
+                        // -webkit-appearance: none !important;
+                    }
+                }
+            }
+        }
+    }
+    .sty-content-pending {
+        cursor: pointer;
+        margin-bottom: 2em;
+        .sty-title {
+            @extend #sty-font-b-27;
+            border-radius: 0.5em 0.5em 0.5em 0.5em;
+            padding: 0.4em 1.5em;
+            background-color: $color-brand-3;
+            color: $color-white-0;
+            .text {
+                display: inline-block;
+            }
+            .icon {
+                display: inline-block;
+                height: 0.8em;
+                width: 0.8em;
+                margin-left: 0.5em;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .sty-cont-sections-1 {
+        margin-top: 2em;
+    }
+    .sty-cont-nav-1 {
+        width: 100%;
+        background-color: $color-white-1;
+        .nav-item {
+            width: 33.3333333333%;
+            .tab {
+                @extend #sty-font-l-30;
+                color: $color-gray-1;
+                cursor: pointer;
+                text-align: center;
+                width: 100%;
+                padding: 0.5em 0.2em;
+                transition: 0.2s background-color ease, 0.2s font-family ease;
+                &:hover {
+                    color: $color-white-0;
+                    background-color: $color-brand-6 !important;
+                }
+                &.active {
+                    @extend #sty-font-b-28;
+                    background-color: $color-white-0;
+                    border-bottom: 0.4em solid $color-brand-6;
+                }
+            }
+        }
+    }
+    .sty-cont-nav-2 {
+        width: 100%;
+        background-color: $color-white-1;
+        .nav-item {
+            width: 25%;
+            .tab {
+                @extend #sty-font-l-30;
+                color: $color-gray-1;
+                cursor: pointer;
+                text-align: center;
+                width: 100%;
+                padding: 0.5em 0.2em;
+                transition: 0.2s background-color ease, 0.2s font-family ease;
+                &:hover {
+                    color: $color-white-0;
+                    background-color: $color-brand-6 !important;
+                }
+                &.active {
+                    @extend #sty-font-b-28;
+                    background-color: $color-white-0;
+                    border-bottom: 0.4em solid $color-brand-6;
+                }
+            }
+        }
+    }
+    .sty-cont-data-tab {
+        padding-top: 3em;
+    }
+    .sty-empty-mesage-1 {
+        @extend #sty-font-n-24;
+        color: $color-gray-5;
+        padding: 2em 1em;
+    }
+    .sty-tag-patient-1 {
+        .sty-title {
+            display: inline-block;
+            @extend #sty-font-n-25;
+            margin-right: 0.3em;
+        }
+        .sty-value {
+            display: inline-block;
+            @extend #sty-font-l-25;
+        }
+    }
+    .sty-cont-patient-schedule {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        .sty-schedule {
+            color: $color-gray-1;
+            padding: 0.8em 0.8em;
+        }
+        .sty-title {
+            @extend #sty-font-n-24;
+        }
+        .sty-time {
+            .sty-tag {
+                @extend #sty-font-n-24;
+                display: inline-block;
+                margin-right: 0.3em;
+            }
+            .sty-value {
+                @extend #sty-font-l-24;
+                display: inline-block;
+            }
+        }
+    }
+
+    .sty-logo-sripe {
+        position: relative;
+        width: 100%;
+        height: 5em;
+        .sty-icon {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 20em;
+            height: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .sty-cont-pay-profile {
+        margin-top: 3em;
+    }
+    .sty-cont-pay-stripe {
+        border: solid $color-gray-5 0.02em;
+        border-radius: 0.6em;
+        padding: 3em 3em;
+    }
+    .sty-select-plan {
+        .sty-title-plan {
+            @extend #sty-font-b-32;
+            color: $color-white-0;
+            padding: 0.5em 1em;
+            &.sty-color-1 {
+                background-color: $color-brand-2;
+            }
+            &.sty-color-2 {
+                background-color: $color-brand-3;
+            }
+            &.sty-color-3 {
+                background-color: $color-brand-1;
+            }
+            &.sty-color-4 {
+                background-color: $color-brand-4;
+            }
+            &.sty-color-5 {
+                background-color: $color-brand-6;
+            }
+        }
+        .sty-features {
+            padding: 3em 1em;
+        }
+        .sty-feature {
+            @extend #sty-font-n-32;
+            color: $color-black-1;
+            margin-bottom: 0.3em;
+        }
+        hr {
+            margin: 0;
+        }
+        .sty-price {
+            @extend #sty-font-b-30;
+            padding: 1em 1em;
+        }
+    }
+    .sty-cont-cancel {
+        .sty-tag-text {
+            @extend #sty-font-b-24;
+            color: $color-black-1;
+        }
+        .sty-tag-name {
+            @extend #sty-font-n-24;
+            color: $color-black-1;
+        }
+    }
+    .sty-header-collapse-1 {
+        cursor: pointer;
+        @extend #sty-font-b-28;
+        position: relative;
+        width: 100%;
+        border: solid $color-gray-5 0.01em;
+        background-color: $color-brand-4;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        color: $color-white-0;
+        margin-bottom: 0.5em;
+        &:hover {
+            background-color: $color-brand-6;
+        }
+        .tag {
+            padding-right: 2em;
+        }
+        .icon {
+            position: absolute;
+            width: 1.5em;
+            height: 1.5em;
+            top: 0.2em;
+            right: 1em;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .sty-collapse-1 {
+        padding-top: 2.5em;
+    }
+    .sty-cont-collapse-2 {
+        position: relative;
+        .sty-collapse-2 {
+            position: absolute;
+            top: 6em;
+            width: 100%;
+            // padding-top: 2.5em;
+            background-color: $color-white-0;
+            border: solid 0.1em $color-gray-4;
+            border-top: unset;
+            border-radius: 0 0 0.3em 0.3em;
+            height: 30em;
+            overflow-y: scroll;
+            z-index: $z-nivel-2;
+        }
+    }
+    .sty-cont-notes {
+        padding: 1em 2em;
+        .sty-note {
+            padding: 1em 0;
+            &:not(:last-child) {
+                border-bottom: solid 0.1em $color-gray-7;
+            }
+            .title {
+                @extend #sty-font-b-24;
+            }
+            .content {
+                @extend #sty-font-n-22;
+            }
+        }
+    }
+    .sty-bar-config {
+        position: relative;
+        height: 6em;
+        width: 100%;
+        .text-notice {
+            @extend #sty-font-b-22;
+            border: $color-brand-1 solid 0.2em;
+            border-radius: 0.5em;
+            width: fit-content;
+            padding: 0.3em 2em;
+            color: $color-brand-1;
+            &.deactive {
+                border-color: $color-brand-6;
+            }
+        }
+        .sty-cont-button {
+            position: absolute;
+            top: 0;
+            right: 1em;
+            &:hover {
+                button {
+                    color: $color-brand-6;
+                }
+            }
+            button {
+                width: 5.5em;
+                height: 5.5em;
+                border-style: unset;
+                color: $color-gray-1;
+                background-color: $color-white-0;
+                transition: 0.2s color ease;
+            }
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .sty-cont-back-button {
+        margin-left: 2em;
+        margin-top: 1.5em;
+    }
+    .sty-title-secction-1 {
+        position: relative;
+        @extend #sty-font-b-27;
+        color: $color-brand-1;
+        border-bottom: 0.1em solid $color-brand-1;
+        padding-top: 0.5em;
+        padding-right: 2.2em;
+        margin-bottom: 1.5em;
+        width: 100%;
+        .icon {
+            position: absolute;
+            top: 0.2em;
+            right: 0.1em;
+            width: 2em;
+            height: 2em;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .sty-row-trait {
+        padding: 0.5em 0 1em 0;
+        border-bottom: solid $color-gray-7 0.02em;
+    }
+
+    .cont-field-array {
+        margin: 3em 0;
+    }
+}
+
+@media (max-width: $resp-cell-max) {
+    .sty-dashboard {
+        .sty-cont-table-1 {
+            overflow-x: scroll;
+            .sty-table-1 {
+                min-width: 100%;
+            }
+        }
+        .sty-all-pagination {
+            .sty-cont-pagination {
+                .sty-cont-total {
+                    margin-bottom: 2em;
+                }
+            }
+        }
+
+        .sty-cont-resp-1 {
+            margin-bottom: 5em;
+        }
+    }
+}

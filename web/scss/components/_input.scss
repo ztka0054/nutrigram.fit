@@ -1,0 +1,728 @@
+.sty-cont-input-1 {
+    margin-bottom: 4.5em;
+    &.fix-1 {
+        margin-bottom: 7em;
+    }
+}
+
+.sty-input-1 {
+    position: relative;
+
+    input {
+        @extend #sty-font-l-30;
+        color: $color-gray-1;
+        width: 100%;
+        border: 0.08em solid $color-gray-4;
+        border-radius: 0.2em;
+        padding: 0.3em 1em;
+        transition: 0.2s border-color ease;
+
+        &.validationSuccess {
+            border-color: $color-brand-2 !important;
+            &:focus,
+            &:hover {
+                border-color: $color-brand-2 !important;
+            }
+        }
+        &.validationError {
+            border-color: $color-brand-4;
+            &:focus,
+            &:hover {
+                border-color: $color-brand-4 !important;
+            }
+        }
+        &:focus,
+        &:hover {
+            outline: none;
+            border-color: $color-brand-6;
+        }
+    }
+    .tag-error {
+        display: none;
+        @extend #sty-font-l-20;
+        color: $color-brand-4;
+        position: absolute;
+        top: 4em;
+        width: 100%;
+        text-align: center;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.sty-cont-input-2 {
+    position: relative;
+    margin-bottom: 2em;
+    &:focus,
+    &:hover {
+        .sty-tag {
+            color: $color-brand-6;
+        }
+    }
+    .sty-tag {
+        @extend #sty-font-b-26;
+        color: $color-gray-1;
+        transition: 0.2s color ease;
+    }
+    .sty-value {
+        @extend #sty-font-n-27;
+        padding: 0.3em 1em;
+    }
+    .sty-input {
+        select {
+            cursor: pointer;
+        }
+        input,
+        textarea,
+        select,
+        .sty-input-card {
+            position: relative;
+            @extend #sty-font-n-27;
+            color: $color-gray-1;
+            width: 100%;
+            border: 0.07em solid $color-gray-3;
+            border-radius: 0.18em;
+            padding: 0.3em 1em;
+            transition: 0.2s border-color ease;
+
+            &:focus,
+            &:hover {
+                outline: none;
+                border-color: $color-brand-6;
+            }
+            &:disabled {
+                background-color: $color-brand-7;
+            }
+            &.validationSuccess {
+                border-color: $color-brand-2 !important;
+                &:focus,
+                &:hover {
+                    border-color: $color-brand-2 !important;
+                }
+            }
+            &.validationError {
+                border-color: $color-brand-4;
+                &:focus,
+                &:hover {
+                    border-color: $color-brand-4 !important;
+                }
+            }
+        }
+        .value-text {
+            @extend #sty-font-n-27;
+            color: $color-gray-1;
+        }
+        .sty-brand {
+            position: absolute;
+            top: 3.8em;
+            right: 1em;
+            .sty-cont-icon {
+                width: 5.5em;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .tag-error {
+        display: none;
+        @extend #sty-font-l-16;
+        color: $color-brand-4;
+        position: absolute;
+        bottom: -1.4em;
+        width: 100%;
+        text-align: right;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.sty-cont-input-2-1 {
+    position: relative;
+    &:focus,
+    &:hover {
+        .sty-tag {
+            color: $color-brand-6;
+        }
+    }
+    .sty-tag {
+        @extend #sty-font-b-20;
+        color: $color-gray-1;
+        transition: 0.2s color ease;
+    }
+    .sty-input {
+        select {
+            cursor: pointer;
+        }
+        input,
+        textarea,
+        select,
+        .sty-input-card {
+            position: relative;
+            @extend #sty-font-n-18;
+            color: $color-gray-1;
+            width: 100%;
+            border: 0.07em solid $color-gray-3;
+            border-radius: 0.18em;
+            padding: 0.3em 0.3em;
+            transition: 0.2s border-color ease;
+
+            &:focus,
+            &:hover {
+                outline: none;
+                border-color: $color-brand-6;
+            }
+            &:disabled {
+                background-color: $color-brand-7;
+            }
+            &.validationSuccess {
+                border-color: $color-brand-2 !important;
+                &:focus,
+                &:hover {
+                    border-color: $color-brand-2 !important;
+                }
+            }
+            &.validationError {
+                border-color: $color-brand-4;
+                &:focus,
+                &:hover {
+                    border-color: $color-brand-4 !important;
+                }
+            }
+        }
+        .value-text {
+            @extend #sty-font-n-27;
+            color: $color-gray-1;
+        }
+        .sty-brand {
+            position: absolute;
+            top: 3.8em;
+            right: 1em;
+            .sty-cont-icon {
+                width: 5.5em;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .tag-error {
+        display: none;
+        @extend #sty-font-l-16;
+        color: $color-brand-4;
+        position: absolute;
+        bottom: -1.4em;
+        width: 100%;
+        text-align: right;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.sty-cont-input-3 {
+    position: relative;
+    margin-bottom: 2em;
+    &.sty-fix-1 {
+        margin-top: 3.3em;
+    }
+    .sty-tag {
+        @extend #sty-font-b-26;
+        color: $color-gray-1;
+        transition: 0.2s color ease;
+    }
+    .sty-input {
+        input {
+            position: relative;
+            @extend #sty-font-b-27;
+            color: $color-gray-1;
+            width: 100%;
+            border: unset;
+            padding: 0.3em 1em;
+            transition: 0.2s border-color ease;
+
+            &:focus,
+            &:hover {
+                outline: none;
+                border-color: $color-brand-6;
+            }
+            &:disabled {
+                background-color: $color-white-0;
+            }
+            &.validationSuccess {
+                border-color: $color-brand-2 !important;
+                &:focus,
+                &:hover {
+                    border-color: $color-brand-2 !important;
+                }
+            }
+            &.validationError {
+                border-color: $color-brand-4;
+                &:focus,
+                &:hover {
+                    border-color: $color-brand-4 !important;
+                }
+            }
+        }
+    }
+    .tag-error {
+        display: none;
+        @extend #sty-font-l-16;
+        color: $color-brand-4;
+        position: absolute;
+        bottom: -1.4em;
+        width: 100%;
+        text-align: right;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.sty-cont-input-3-1 {
+    .text {
+        @extend #sty-font-b-27;
+        color: $color-brand-2;
+    }
+}
+
+.sty-input-tag-g-1 {
+    @extend #sty-font-b-26;
+    color: $color-gray-1;
+    margin-bottom: 0.6em;
+}
+
+.sty-search-input {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    &:focus,
+    &:hover {
+        input {
+            border-color: $color-brand-6;
+        }
+        .sty-cont-icon {
+            .sty-icon {
+                path,
+                polygon {
+                    fill: $color-brand-6 !important;
+                }
+            }
+        }
+    }
+    .sty-cont-icon {
+        position: absolute;
+        right: 2em;
+        top: 1.1em;
+        .sty-icon {
+            width: 2.8em;
+            height: 2.8em;
+            path,
+            polygon {
+                fill: $color-gray-3 !important;
+                transition: 0.2s fill ease;
+            }
+        }
+    }
+    input {
+        @extend #sty-font-n-27;
+        width: 100%;
+        border: 0.05em solid $color-gray-3;
+        border-radius: 0.18em;
+        padding: 0.35em 2.8em 0.35em 1.1em;
+        &::placeholder {
+            color: $color-gray-5;
+        }
+    }
+}
+
+// Load image
+.sty-cont-all-pic {
+    cursor: pointer;
+    margin-bottom: 3em;
+    position: relative;
+    &:hover {
+        .sty-u-cont-tag-op {
+            .sty-tag {
+                color: $color-brand-6;
+            }
+        }
+    }
+    .sty-title {
+        @extend #sty-font-b-26;
+        color: $color-gray-1;
+        margin-bottom: 0.3em;
+    }
+    .tag-error {
+        display: none;
+        @extend #sty-font-l-16;
+        color: $color-brand-4;
+        position: absolute;
+        bottom: -1.4em;
+        // width: 100%;
+        text-align: right;
+        &.active {
+            display: block;
+        }
+    }
+}
+.sty-u-cont-pic {
+    position: relative;
+    border-radius: 0.8em;
+    width: 100%;
+    padding-bottom: 140%;
+    //height: 21em;
+    background-color: $color-white-5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sty-pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .sty-doc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.3em;
+        overflow: hidden;
+        .sty-name {
+            @extend #sty-font-b-24;
+            text-align: center;
+        }
+    }
+}
+.sty-u-cont-tag-op {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sty-pic {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .sty-tag {
+        display: inline-block;
+        @extend #sty-font-b-27;
+        color: $color-gray-1;
+        margin-left: 0.5em;
+    }
+}
+
+.sty-cont-load-img-1 {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 2.5em;
+    .sty-pic {
+        background-color: $color-gray-5;
+        border-radius: 1em;
+        width: 100%;
+        height: 20em;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &:hover {
+        .sty-tag {
+            color: $color-brand-6;
+        }
+    }
+    .tag-error {
+        display: none;
+        @extend #sty-font-l-16;
+        color: $color-brand-4;
+        position: absolute;
+        bottom: -1.4em;
+        width: 100%;
+        text-align: right;
+        &.active {
+            display: block;
+        }
+    }
+    .sty-tag {
+        @extend #sty-font-n-27;
+        width: 100%;
+        color: $color-gray-1;
+        text-align: center;
+        margin-top: 0.4em;
+        transition: 0.2s background-color ease;
+    }
+    .sty-icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .sty-name {
+        display: inline-block;
+    }
+}
+
+// Checbox
+.sty-checkbox-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    .sty-tag {
+        @extend #sty-font-n-22;
+        display: inline-block;
+    }
+    .tag-error {
+        display: none;
+        @extend #sty-font-l-16;
+        color: $color-brand-4;
+        position: absolute;
+        bottom: -1.4em;
+        width: 100%;
+        text-align: right;
+        &.active {
+            display: block;
+        }
+    }
+}
+.sty-checkbox-label {
+    @extend #sty-font-n-22;
+    display: inline-block;
+    margin: 0 0.8em 0 0;
+    position: relative;
+    cursor: pointer;
+    line-height: 1.2em;
+    height: 1.5em;
+    width: 1.5em;
+    clear: both;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .sty-checkbox-custom {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 1.5em;
+        width: 1.5em;
+        background-color: transparent;
+        border-radius: 0.3em;
+        transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        border: 0.05em solid $color-gray-4;
+    }
+    input:checked ~ .sty-checkbox-custom {
+        background-color: $color-brand-3;
+        border-radius: 0.3em;
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+        border: 0.05em solid $color-gray-4;
+    }
+    .sty-checkbox-custom::after {
+        position: absolute;
+        content: "";
+        left: 12px;
+        top: 12px;
+        height: 0px;
+        width: 0px;
+        border-radius: 0.3em;
+        border: solid $color-white-0;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(0deg) scale(0);
+        -ms-transform: rotate(0deg) scale(0);
+        transform: rotate(0deg) scale(0);
+        opacity: 1;
+        transition: all 0.05s ease-out;
+        -webkit-transition: all 0.05s ease-out;
+        -moz-transition: all 0.05s ease-out;
+        -ms-transition: all 0.05s ease-out;
+        -o-transition: all 0.05s ease-out;
+    }
+    input:checked ~ .sty-checkbox-custom::after {
+        -webkit-transform: rotate(45deg) scale(1);
+        -ms-transform: rotate(45deg) scale(1);
+        transform: rotate(45deg) scale(1);
+        opacity: 1;
+        left: 0.6em;
+        top: 0.35em;
+        width: 0.3em;
+        height: 0.6em;
+        border: solid $color-white-0;
+        border-width: 0 2px 2px 0;
+        background-color: transparent;
+        border-radius: 0;
+    }
+}
+
+// Radio
+.sty-radio-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    .sty-tag {
+        @extend #sty-font-n-22;
+        display: inline-block;
+    }
+    .tag-error {
+        display: none;
+        @extend #sty-font-l-16;
+        color: $color-brand-4;
+        position: absolute;
+        bottom: -1.4em;
+        width: 100%;
+        text-align: right;
+        &.active {
+            display: block;
+        }
+    }
+}
+.sty-radio-label {
+    @extend #sty-font-n-22;
+    display: inline-block;
+    margin: 0 0.8em 0 0;
+    position: relative;
+    cursor: pointer;
+    line-height: 1.2em;
+    height: 1.5em;
+    width: 1.5em;
+    clear: both;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .sty-radio-custom {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 1.5em;
+        width: 1.5em;
+        background-color: transparent;
+        border-radius: 2em;
+        transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        border: 0.05em solid $color-gray-4;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input:checked ~ .sty-radio-custom {
+        background-color: $color-brand-3;
+        border-radius: 2em;
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+        border: 0.05em solid $color-gray-4;
+    }
+    .sty-radio-custom::after {
+        position: absolute;
+        content: "";
+        background: $color-white-0;
+        border-radius: 50%;
+        height: 0px;
+        width: 0px;
+    }
+    input:checked ~ .sty-radio-custom::after {
+        height: 0.5em;
+        width: 0.5em;
+    }
+}
+
+.sty-cont-buttons-1 {
+    padding-bottom: 2em;
+    .sty-cont-1 {
+        display: inline-block;
+        width: 40%;
+        padding: 0 2em;
+    }
+    .sty-cont-2 {
+        display: inline-block;
+        width: 60%;
+    }
+    .sty-cont-3 {
+        display: inline-block;
+        width: 50%;
+        padding: 0 2em;
+    }
+    .sty-cont-4 {
+        display: inline-block;
+        width: 40%;
+        padding: 0 0.2em;
+    }
+}
+
+.sty-margin-button-1 {
+    margin-bottom: 2em;
+}
+
+@media (max-width: $resp-cell-max) {
+    .sty-search-input {
+        margin: 3em auto 0 auto;
+    }
+}
+
+//Validation card
+.sty-card-message {
+    position: relative;
+    height: 4em;
+    .sty-mesage {
+        position: absolute;
+        @extend #sty-font-n-20;
+        color: $color-brand-6-1;
+        top: -0.5em;
+        width: 100%;
+    }
+}
+
+.validation-array {
+    @extend #sty-font-b-22;
+    color: $color-brand-4 !important;
+    width: 100%;
+    text-align: right;
+}

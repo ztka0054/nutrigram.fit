@@ -1,0 +1,61 @@
+@import "../../../../scss/variables";
+
+.chechbox {
+    input {
+        cursor: pointer;
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        /* For iOS < 15 */
+        background-color: $color-white-0;
+        /* Not removed via appearance */
+        margin: 0;
+
+        font: inherit;
+        color: currentColor;
+        width: 2.5em;
+        height: 2.5em;
+        border: 0.13em solid $color-brand-1;
+        border-radius: 0.15em;
+        transform: translateY(-0.075em);
+
+        display: grid;
+        place-content: center;
+    }
+
+    input::before {
+        content: "";
+        // width: 0.5em;
+        // height: 0.5em;
+        // clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        // transform: scale(0);
+        // transform-origin: bottom left;
+        // transition: 0.2s transform ease;
+        // box-shadow: inset 1em 1em var(--form-control-color);
+        /* Windows High Contrast Mode */
+        background-color: $color-white-0;
+        padding: 0.1em;
+    }
+
+    input:checked::before {
+        transform: scale(1);
+    }
+
+    input:checked {
+        background-color: $color-brand-1;
+    }
+
+    input:focus {
+        // outline: max(2px, 0.15em) solid currentColor;
+        // outline-offset: max(2px, 0.15em);
+        border-color: $color-brand-1;
+    }
+
+    input:disabled {
+        --form-control-color: var(--form-control-disabled);
+
+        color: var(--form-control-disabled);
+        cursor: not-allowed;
+    }
+}

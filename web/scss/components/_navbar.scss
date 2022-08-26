@@ -1,0 +1,142 @@
+/* Navbar */
+$heigh-navbar: 8.5em;
+$heigh-navbar-min: 11em;
+.class-heightNavBar{
+    margin-top: $heigh-navbar;
+}
+
+.sty-cont-all-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $heigh-navbar;
+    background-color: $color-white-0 !important;  
+    -webkit-box-shadow: -2px 2px 22px -5px rgba(0,0,0,0.11);
+    -moz-box-shadow: -2px 2px 22px -5px rgba(0,0,0,0.11);
+    box-shadow: -2px 2px 22px -5px rgba(0,0,0,0.11);
+    z-index: $z-nivel-50;
+    transition: 0.25s box-shadow ease, 0.25s height ease;
+    
+    &.style-navFirst{
+        height: 9em;
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+        box-shadow: unset;
+    }
+    .sty-cont-icon{
+        height: inherit;
+        height: 98%;
+        width: auto;
+        margin-left: 2.5em;
+        z-index: $z-nivel-1;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .sty-center-links{
+        position: absolute;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        z-index: $z-nivel-0;
+        li{
+            margin: 0 0.5em
+        }
+    }
+    .sty-right-links{
+        z-index: $z-nivel-1;
+    }
+    .nav-item{
+        @extend #sty-font-b-26;
+    }
+    .sty-other-elements{
+        display: none;
+    }
+}
+
+.sty-cont-all-nav-dash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $heigh-navbar;
+    background-color: $color-white-6 !important;  
+    z-index: $z-nivel-50;
+    transition: 0.25s box-shadow ease, 0.25s height ease;
+    .sty-cont-icon{
+        height: inherit;
+        height: 98%;
+        width: auto;
+        margin-left: 2.5em;
+        z-index: $z-nivel-1;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .nav-item{
+        @extend #sty-font-b-26;
+    }
+}
+
+@media (max-width: $resp-cell-max){
+    .class-heightNavBar{
+        margin-top: $heigh-navbar-min;
+    }
+    .sty-cont-all-nav{
+        height: $heigh-navbar-min;
+        &.style-navFirst{
+            height: 11em;
+        }
+        .sty-cont-icon{
+            img{
+                height: 70%;
+            }
+        }
+        .sty-other-elements{
+            display: block;
+        }
+        .sty-right-links{
+            background-color: $color-white-1;
+            margin-top: 2em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+        .sty-toogle-menu{
+            width: 3em;
+            height: 3em;
+            svg{
+                color: $color-gray-3;
+            }
+        }
+        .sty-center-links{
+            display: none;
+        }
+        .nav-item{
+            
+        }
+    }
+    .sty-cont-all-nav-dash{
+        height: $heigh-navbar-min;
+        .sty-cont-icon{
+            img{
+                height: 70%;
+            }
+        }
+        .sty-toogle-menu{
+            width: 3em;
+            height: 3em;
+            svg{
+                color: $color-gray-3;
+            }
+        }
+        .sty-right-links{
+            background-color: $color-white-1;
+            margin-top: 2em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+    }
+}

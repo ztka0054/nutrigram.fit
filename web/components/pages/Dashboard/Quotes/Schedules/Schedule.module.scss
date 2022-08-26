@@ -1,0 +1,129 @@
+@import "../../../../../scss/variables";
+@import "../../../../../scss/components/fonts";
+
+.titleConfig {
+    @extend #sty-font-b-45;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.contSections{
+    display: flex;
+    .section{
+        width: 50%;
+        padding: 0 3em;
+        .header{
+            display: flex;
+            align-items: center;
+        }
+        .titleSection{
+            @extend #sty-font-b-28;
+            width: 100%;
+            margin-right: 0.2em;
+        }
+        .buttonAdd{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $color-brand-3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            transition: ease-in-out 0.2s background-color;
+            svg{
+                width: 25px;
+                height: 25px;
+            }
+            &:hover{
+                background-color: $color-brand-2;
+            }
+        }
+    }
+    .line{
+        border-top: 1px solid $color-brand-2;
+        width: 100%;
+        margin: 3em 0;
+    }
+}
+
+.contElements{
+    .empty{
+        @extend #sty-font-b-20;
+        text-align: center;
+        color: $color-gray-4;
+    }
+    .tableElements{
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        thead{
+            @extend #sty-font-b-20;
+            background-color: $color-brand-7;
+            th{
+                padding: 0.8em 0.5em;
+            }
+        }
+        tbody{
+            @extend #sty-font-n-22;
+            tr{
+                border-bottom: dashed 1px $color-brand-1;
+            }
+            td{
+                padding: 0.8em 0.5em;
+            }
+            .contButtons{
+                display: flex;
+                justify-content: flex-end;
+                button{
+                    border-style: none;
+                    border: solid 1px $color-gray-1;
+                    border-radius: 0.5em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.3em;
+                    background-color: $color-white-0;
+                    transition: ease-in-out 0.1s background-color;
+                    &:not(:last-child){
+                        margin-right: 0.8em;
+                    }
+                    &:hover{
+                        svg{
+                            path{
+                                stroke: $color-white-0;
+                            }
+                        }
+                    }
+                    svg{
+                        width: 1.2em;
+                        height: 1.2em;
+                    }
+                }
+                .buttonDelete{
+                    border-color: $color-second-1;
+                    &:hover{
+                        background-color: $color-second-1;
+                    }
+                    svg{
+                        path{
+                            stroke: $color-second-1;
+                        }
+                    }
+                }
+                .buttonEdit{
+                    border-color: $color-brand-2;
+                    &:hover{
+                        background-color: $color-brand-2;
+                    }
+                    svg{
+                        path{
+                            stroke: $color-brand-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

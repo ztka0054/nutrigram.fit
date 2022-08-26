@@ -1,0 +1,1 @@
+{"ast":null,"code":"import constants from '../../enviroment/config';\nconst post_recovery = {\n  'url': `${constants.api_url}/nutritionist/nutritionists/password_recovery/`,\n  'typeRequest': 'post'\n};\nexport default {\n  post_recovery\n};","map":null,"metadata":{},"sourceType":"module"}

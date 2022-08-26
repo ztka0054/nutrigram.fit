@@ -1,0 +1,258 @@
+/* Home */
+.sty-home{
+    .sty-home-cont-1-1{
+        margin-top: 4em;
+        .sty-cont-button-1{
+            display: inline-block;
+            margin-right: 2em;
+        }
+        .sty-cont-button-2{
+            display: inline-block;
+        }
+    }
+    .sty-cont-img-2{
+        width:90%;
+        height: auto;
+        margin: auto;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .sty-cont-img-3{
+        width:80%;
+        height: auto;
+        margin: auto;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .sty-home-cont-2-1{
+        margin-top: 6em;
+    }
+    .sty-home-cont-3-1{
+        background-color: $color-brand-2;
+        padding: 8em 25em 8em 6em;
+        .sty-cont-step-1{
+            padding: 2em 0em;
+            &.sty-l{
+                border-bottom: 0.07em solid $color-white-1;
+            }
+        }
+        .sty-tag-num{
+            display: inline-block;
+            width: 20%;
+        }
+        .sty-tag-text{
+            display: inline-block;
+            width: 80%;
+        }
+    }
+    .sty-home-cont-3-2{
+        margin-top: 2em;
+    }
+    .sty-home-cont-3-3{
+        position: relative;
+        height: 70em;
+        .cont-img-3-1{
+            position: absolute;
+            top: -20.5em;
+            right: 0;
+            width: 68em;
+            height: auto;
+            z-index: $z-nivel-1;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .cont-img-3-2{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 48em;
+            height: auto;
+            z-index: $z-nivel--1;
+            opacity: .25;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .sty-home-cont-3-4{
+        margin-top: 21em;
+    }
+    .sty-back-img-5{
+        position: absolute;
+        top: 0;
+        right: 14em;
+        width: auto;
+        height: 66em;
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
+    .sty-home-cont-5-1{
+        margin-top: 1em;
+        padding-left: 2em;
+        .sty-cont-sliders{
+            position: relative;
+            min-height: 25em;
+            width: 100%;
+            background-color: $color-gray-3-1;
+            padding: 4em 4em;
+            .sty-cont-all-tag{
+                position: absolute;
+                bottom: 3.9em;
+                right: 4em;
+                .sty-cont-tag{
+                    display: inline-block;
+                    margin:0 0.7em;
+                }
+                .sty-tag{
+                    cursor: pointer;
+                    border: 0.18em solid $color-white-0;
+                    width: 2.4em;
+                    height: 2.4em;
+                    border-radius: 5em;
+                    transition: 0.2s border-color ease;
+                    .sty-circle{
+                        background-color: $color-white-0;
+                        width: 1.225em;
+                        height: 1.225em;
+                        border-radius: 4em;
+                        transition: 0.2s background-color ease;
+                    }
+                    &:hover, &.sty-select{
+                        border-color: $color-brand-6;
+                        .sty-circle{
+                            background-color: $color-brand-6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sty-cont-slide-1{
+        position: relative;
+        min-height: 25em;
+        .sty-cont-data{
+            position: absolute;
+            bottom: 0;
+            .sty-cont-pic{
+                display: inline-block;
+                margin-right: 2em;
+                .sty-pic{
+                    width: 8em;
+                    height: 8em;
+                    border-radius: 10em;
+                    overflow: hidden;
+                    border: 0.3em solid $color-white-1;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }      
+                }
+            }
+            .sty-cont-text{
+                display: inline-block;
+                .sty-name{
+                    @extend #sty-font-c-b-28;
+                    color: $color-white-0;
+                    margin-bottom: -0.2em;
+                }
+                .sty-job{
+                    @extend #sty-font-l-28;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+
+    .sty-home-cont-6-1{
+        margin-bottom: 3em;
+    }
+    .sty-logo-1{
+        width: 45em;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .sty-home-about-1-1{
+        margin-bottom: 1.5em
+    }
+}
+
+
+@media (max-width: $resp-cell-max){
+    .sty-home{
+        .sty-home-cont-1-1{
+            .sty-cont-button-1{
+                margin-right: 0;
+                margin-bottom: 3em;
+            }
+        }
+        .sty-cont-img-2{
+            width: 100%;
+        }
+        .sty-cont-img-3{
+            width: 100%;
+        }
+        .sty-home-cont-2-1{
+            margin-top: 5em;
+        }
+        .sty-home-cont-3-1{
+            padding: 2em 3em;
+            .sty-tag-num{
+                margin-right: 2em;
+            }
+        }
+        .sty-home-cont-3-3{
+            height: 25em;
+        }
+        .sty-home-cont-3-4{
+            margin-top: 6em;
+        }
+        .sty-cont-slide-1{
+            min-height: 30em;
+        }
+        .sty-home-cont-5-1{
+            padding-left: 0;
+            .sty-cont-data{
+                bottom: 0em;
+            }
+            .sty-cont-sliders {
+                padding: 4em 2em 6em 2em;
+                min-height: 35em;
+                .sty-cont-all-tag {
+                    bottom: 2em;
+                }
+            }
+        }
+        .sty-logo-1{
+            width: 35em;
+        }
+    }
+
+    .sty-home-cont-4{
+        margin-top: -5em;
+        .sty-courtain-b-1{
+            z-index: $z-nivel-1;   
+        }
+        .sty-cont-movil-1{
+            z-index: $z-nivel-0;   
+            width: 50em;
+            right: -25em;
+        }
+        .sty-cont-info{
+            z-index: $z-nivel-1;   
+        }
+    }
+}

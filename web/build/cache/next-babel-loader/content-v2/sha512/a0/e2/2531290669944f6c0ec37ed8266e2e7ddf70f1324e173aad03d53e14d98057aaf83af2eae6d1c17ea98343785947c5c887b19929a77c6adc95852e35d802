@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default (n => {\n  var minutes = n % 60;\n  var hours = (n - minutes) / 60;\n  return `${pad2(hours)}:${pad2(minutes)}:00`;\n});\n\nfunction pad2(number) {\n  return (number < 10 ? \"0\" : \"\") + number;\n}","map":null,"metadata":{},"sourceType":"module"}

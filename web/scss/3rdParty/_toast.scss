@@ -1,0 +1,15 @@
+
+@import "~react-toastify/scss/main";
+
+.toast-container{
+    @extend #sty-font-n-24;
+    color: $color-brand-1;
+    text-align: center;
+    background-color: $color-brand-7;
+    -webkit-box-shadow: 1px -1px 18px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px -1px 18px -1px rgba(0,0,0,0.2);
+    box-shadow: 1px -1px 18px -1px rgba(0,0,0,0.2);
+    min-height: 3em;
+    // min-width: 25em;
+    border-radius: 0.2em;
+}

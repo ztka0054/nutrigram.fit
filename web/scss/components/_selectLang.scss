@@ -1,0 +1,110 @@
+// Select Language
+.sty-change-language{
+    background-color: $color-unset;
+    border: 0.09em solid $color-brand-6;
+    padding: 0.32em 0.5em;
+    border-radius: 0.75em;
+    transition: 0.2s background-color ease;
+    &:hover{
+        background-color: $color-brand-6;
+    }
+    .sty-indicator{
+        display: inline-block;
+        height: 1em;
+        width: auto;
+        margin-right: 0.5em;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .sty-flag{
+        display: inline-block;
+        height: 1.4em;
+        width: auto;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+.sty-select-language{
+    @extend #sty-font-b-26;
+    border: unset;
+    padding: 0.5em 1em;
+    min-width: 9.5em;
+    -webkit-box-shadow: 1px -1px 18px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px -1px 18px -1px rgba(0,0,0,0.4);
+    box-shadow: 1px -1px 18px -1px rgba(0,0,0,0.4);
+    &.fix-1{
+        padding: 0.5em 1.5em; 
+    }
+
+    .style-cont-language{
+        cursor: pointer;
+        padding: 0.5em 0.5em;
+        border-radius: 0.75em;
+        color: $color-gray-1;
+        margin-bottom: 0.5em;
+        transition: 0.2s background-color ease, 0.2s color ease;
+        &:hover{
+            background-color: $color-brand-6-1;
+            color: $color-white-0;
+            
+            .sty-text{
+                color: $color-white-0;
+            }
+        }
+        .sty-cont-elements{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .sty-flag{
+        display: inline-block;
+        height: 1.4em;
+        width: auto;
+        margin-right: 0.7em;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .sty-text{
+        color: $color-gray-1;
+        display: inline-block;
+        height: 1.2em;
+    }
+}
+
+.sty-change-session{
+    background-color: $color-unset;
+    border: 0.09em solid $color-brand-6;
+    padding: 0  0 0 0.5em;
+    border-radius: 0.75em;
+    transition: 0.2s background-color ease;
+    .sty-indicator{
+        display: inline-block;
+        height: 1em;
+        width: auto;
+        margin-right: 0.5em;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .sty-pic{
+        display: inline-block;
+        height: 2.8em;
+        width: 2.8em;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0.65em;
+        }
+    }
+}
+.sty-change-session:hover{
+    background-color: $color-brand-6;
+}

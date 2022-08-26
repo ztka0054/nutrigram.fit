@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "Roboto";
+    font-display: block;
+    src: local("Roboto"),
+        url(/static/fonts/roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    font-display: block;
+    src: local("Roboto-light"),
+        url(/static/fonts/roboto/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    font-display: block;
+    src: local("Roboto-bold"),
+        url(/static/fonts/roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-black";
+    font-display: block;
+    src: local("Roboto-black"),
+        url(/static/fonts/roboto/Roboto-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Charter";
+    font-display: block;
+    src: local("Charter"),
+        url(/static/fonts/charter/Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Charter-bold";
+    font-display: block;
+    src: local("Charter-bold"),
+        url(/static/fonts/charter/Bold.ttf) format("truetype");
+}
+
+@function font-resize-large($size) {
+    @return ($size * 1) * 1px;
+}
+@function font-resize($size) {
+    // @return ($size*0.75)*1px;
+    @return (($size * 0.048079615384615)) * 1vw;
+}
+@function font-resize-small($size) {
+    // @return (($size*5)/19)*1vw
+    @return (($size * 0.065)) * 10px;
+}
+
+@mixin size($size) {
+    @media (min-width: 1500px) {
+        font-size: font-resize-large($size);
+    }
+    @media (max-width: 1500px) and (min-width: 767px) {
+        font-size: font-resize($size);
+    }
+    @media (max-width: 767px) {
+        font-size: font-resize-small($size);
+    }
+}
+
+#font-light {
+    font-family: "Roboto-light";
+}
+#font-normal {
+    font-family: "Roboto";
+}
+#font-bold {
+    font-family: "Roboto-bold";
+}
+
+#font-normal-c {
+    font-family: "Charter";
+}
+#font-bold-c {
+    font-family: "Charter-bold";
+}
+
+@mixin font_l($size) {
+    @extend #font-light;
+    @include size($size);
+}
+
+@mixin font_n($size) {
+    @extend #font-normal;
+    @include size($size);
+}
+
+@mixin font_b($size) {
+    @extend #font-bold;
+    @include size($size);
+}
+
+@mixin font_c_b($size) {
+    @extend #font-bold-c;
+    @include size(28);
+}
+
+#sty-font-l-12 {
+    @extend #font-light;
+    @include size(12);
+}
+#sty-font-l-14 {
+    @extend #font-light;
+    @include size(14);
+}
+#sty-font-l-16 {
+    @extend #font-light;
+    @include size(16);
+}
+#sty-font-l-18 {
+    @extend #font-light;
+    @include size(18);
+}
+#sty-font-l-20 {
+    @extend #font-light;
+    @include size(20);
+}
+#sty-font-l-24 {
+    @extend #font-light;
+    @include size(24);
+}
+#sty-font-l-25 {
+    @extend #font-light;
+    @include size(25);
+}
+#sty-font-l-28 {
+    @extend #font-light;
+    @include size(28);
+}
+#sty-font-l-30 {
+    @extend #font-light;
+    @include size(30);
+}
+
+#sty-font-n-10 {
+    @extend #font-normal;
+    @include size(10);
+}
+#sty-font-n-12 {
+    @extend #font-normal;
+    @include size(12);
+}
+#sty-font-n-14 {
+    @extend #font-normal;
+    @include size(14);
+}
+#sty-font-n-16 {
+    @extend #font-normal;
+    @include size(16);
+}
+#sty-font-n-18 {
+    @extend #font-normal;
+    @include size(18);
+}
+#sty-font-n-20 {
+    @extend #font-normal;
+    @include size(20);
+}
+#sty-font-n-22 {
+    @extend #font-normal;
+    @include size(22);
+}
+#sty-font-n-24 {
+    @extend #font-normal;
+    @include size(24);
+}
+#sty-font-n-25 {
+    @extend #font-normal;
+    @include size(25);
+}
+#sty-font-n-26 {
+    @extend #font-normal;
+    @include size(26);
+}
+#sty-font-n-27 {
+    @extend #font-normal;
+    @include size(27);
+}
+#sty-font-n-30 {
+    @extend #font-normal;
+    @include size(30);
+}
+#sty-font-n-32 {
+    @extend #font-normal;
+    @include size(32);
+}
+#sty-font-n-35 {
+    @extend #font-normal;
+    @include size(35);
+}
+#sty-font-n-40 {
+    @extend #font-normal;
+    @include size(40);
+}
+
+#sty-font-b-12 {
+    @extend #font-bold;
+    @include size(12);
+}
+#sty-font-b-13 {
+    @extend #font-bold;
+    @include size(13);
+}
+#sty-font-b-14 {
+    @extend #font-bold;
+    @include size(14);
+}
+#sty-font-b-16 {
+    @extend #font-bold;
+    @include size(16);
+}
+#sty-font-b-18 {
+    @extend #font-bold;
+    @include size(18);
+}
+#sty-font-b-20 {
+    @extend #font-bold;
+    @include size(20);
+}
+#sty-font-b-22 {
+    @extend #font-bold;
+    @include size(22);
+}
+#sty-font-b-24 {
+    @extend #font-bold;
+    @include size(24);
+}
+#sty-font-b-25 {
+    @extend #font-bold;
+    @include size(25);
+}
+#sty-font-b-26 {
+    @extend #font-bold;
+    @include size(26);
+}
+#sty-font-b-27 {
+    @extend #font-bold;
+    @include size(27);
+}
+#sty-font-b-28 {
+    @extend #font-bold;
+    @include size(28);
+}
+#sty-font-b-30 {
+    @extend #font-bold;
+    @include size(30);
+}
+#sty-font-b-32 {
+    @extend #font-bold;
+    @include size(32);
+}
+#sty-font-b-35 {
+    @extend #font-bold;
+    @include size(35);
+}
+#sty-font-b-40 {
+    @extend #font-bold;
+    @include size(40);
+}
+#sty-font-b-45 {
+    @extend #font-bold;
+    @include size(45);
+}
+#sty-font-b-50 {
+    @extend #font-bold;
+    @include size(50);
+}
+#sty-font-b-55 {
+    @extend #font-bold;
+    @include size(55);
+}
+
+/////////////
+#sty-font-c-b-28 {
+    @extend #font-bold-c;
+    @include size(28);
+}
+#sty-font-c-b-30 {
+    @extend #font-bold-c;
+    @include size(30);
+}
+#sty-font-c-b-35 {
+    @extend #font-bold-c;
+    @include size(35);
+}
+#sty-font-c-b-40 {
+    @extend #font-bold-c;
+    @include size(40);
+}
+#sty-font-c-b-70 {
+    @extend #font-normal-c;
+    @include size(70);
+}
+#sty-font-c-b-50 {
+    @extend #font-normal-c;
+    @include size(50);
+}
+#sty-font-c-b-60 {
+    @extend #font-normal-c;
+    @include size(60);
+}
+#sty-font-c-b-80 {
+    @extend #font-bold-c;
+    @include size(80);
+}

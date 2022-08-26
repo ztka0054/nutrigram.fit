@@ -1,0 +1,1 @@
+{"ast":null,"code":"import momentTime from \"moment-timezone\";\n\nconst getTimeZoneDate = date => {\n  let timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;\n  let timeDate = momentTime.tz(date, timeZone).format();\n  return timeDate;\n};\n\nexport default getTimeZoneDate;","map":null,"metadata":{},"sourceType":"module"}

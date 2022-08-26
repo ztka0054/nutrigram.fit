@@ -1,0 +1,30 @@
+{
+    "required": "Campo requerido",
+    "email must be a valid email": "Formato del email inválido",
+    "format_password": "Debe contener mínimo 8 caracteres, por lo menos con un número y un carácter especial",
+
+    "incomplete_number": "Número incompleto",
+    "invalid_number": "Número incorrecto",
+    "incorrect_cvc": "CVC incorrecto",
+    "invalid_expiry_month": "Mes de expiración invalido",
+    "invalid_expiry_year": "Año de expiración invalido",
+
+    "pay_message_1": "Suscripción realizada con éxito",
+
+    "message_1": "¡Guardado con éxito!",
+    "message_email_1": "Mensaje enviado al email proporcionado",
+    "must_accept_terms": "Debe aceptar términos y condiciones",
+    "array_ingredients": "Debes agregar al menos un ingrediente",
+    "array_portions": "Debes agregar al menos un tipo de porción",
+    "not_assigned": "Sin asignar",
+    "without_assigned_plan": "Sin ningún plan asignado",
+    "without_assigned_menu": "Sin ningún menú asignado",
+    "no_plan": "Sin plan",
+    "available_patients": "Cuentas con # pacientes disponibles con tu plan actual",
+    "unavailable_patients": "No cuentas con más pacientes disponibles con tu plan actual",
+    "success_request": "Solicitud enviada con éxito, un administrador revisará la solicitud y dará una respuesta",
+    "menu_sent": "Menú enviado",
+    "fields_language": "Debes completar los campos de un lenguaje",
+    "unexpected_error": "Oops!, Ocurrió algo inesperado",
+    "without_image": "Sin imagen"
+}

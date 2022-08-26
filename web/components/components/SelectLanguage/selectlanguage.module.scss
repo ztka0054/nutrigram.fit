@@ -1,0 +1,48 @@
+@import "../../../scss/variables";
+@import "../../../scss/components/fonts";
+
+.content {
+    width: 100%;
+    .languageTags {
+        @include font_b(26);
+        width: 100%;
+        display: flex;
+    }
+    .languageTag {
+        cursor: pointer;
+        user-select: none;
+        width: 50%;
+        border: solid;
+        border: $color-brand-2 solid 1px;
+        padding: 0.3em 1em;
+        &:first-child {
+            border-radius: 0.7em 0 0 0;
+        }
+        &:last-child {
+            border-radius: 0 0.7em 0 0;
+        }
+        &:hover {
+            background-color: $color-brand-2-1;
+        }
+        &.active {
+            background-color: $color-brand-2;
+        }
+    }
+    .contData {
+        padding: 2em 2em;
+        border: solid 1px $color-brand-2;
+        border-top: none;
+        border-radius: 0 0 0.7em 0.7em;
+    }
+}
+
+.tagError {
+    display: none;
+    @extend #sty-font-l-16;
+    color: $color-brand-4;
+    width: 100%;
+    text-align: right;
+    &.active {
+        display: block;
+    }
+}
