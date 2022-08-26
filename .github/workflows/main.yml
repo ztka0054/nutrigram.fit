@@ -41,12 +41,11 @@ jobs:
         with: 
 
           node-version: ${{ matrix.node-version }} 
-     # - name: changing directory 
-
-       # run: cd web 
+     
+         
         
       - name: Install Dependencies 
-
+        working-directory: ./web
         run: npm install
         
       
