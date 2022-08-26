@@ -82,4 +82,4 @@ jobs:
 
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # Access Secret Key 
 
-          SOURCE_DIR: "build/emission-portal/" # build folder
+          SOURCE_DIR: "build/" # build folder
