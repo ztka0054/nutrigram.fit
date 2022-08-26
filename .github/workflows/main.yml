@@ -48,6 +48,10 @@ jobs:
         working-directory: ./web
         run: npm install
         
+      - name: Production Build 
+
+        run: npm run build --export 
+        
       
 
 # Deploy to S3 
