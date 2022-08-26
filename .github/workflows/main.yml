@@ -22,7 +22,7 @@ jobs:
 
       AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}} 
 
-      aws-region: us-east-1 # Use your bucket region here 
+      aws-region: us-east-1 # Use your bucket region here
 
     strategy: 
 
