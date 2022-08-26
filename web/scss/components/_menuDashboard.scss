@@ -1,0 +1,95 @@
+// Menu dashboard
+.sty-menu-dashboard {
+    padding: 0;
+    // background-color: rgb(201, 201, 201);
+    .sty-cont-menu {
+        width: 100%;
+        padding-top: 4em;
+    }
+    .sty-cont-section {
+        cursor: pointer;
+        width: 100%;
+        padding: 0.5em 2em;
+        display: flex;
+        align-items: center;
+        border-radius: 1em;
+        background-color: $color-white-0;
+        transition: 0.2s background-color ease;
+        margin-bottom: 1em;
+        &.active {
+            border: solid 0.2em $color-brand-3;
+        }
+        &:hover {
+            background-color: $color-brand-6;
+            .sty-tag {
+                color: $color-white-0;
+            }
+        }
+        .sty-icon {
+            position: relative;
+            display: inline-block;
+            top: 0;
+            right: 0;
+            width: 6em;
+            padding-bottom: 6em;
+            //width: 6em;
+            margin-right: 2em;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: auto;
+            }
+        }
+        .sty-tag {
+            @extend #sty-font-b-26;
+            display: inline-block;
+            color: $color-gray-1;
+            transition: 0.2s color ease;
+        }
+    }
+}
+
+@media (max-width: $resp-cell-max) {
+    .sty-menu-dashboard {
+        position: fixed;
+        z-index: $z-nivel-2;
+        background-color: $color-white-0;
+        border-right: solid 0.05em $color-gray-5;
+        height: 100%;
+        left: -82%;
+        transition: 0.2s left ease;
+        &.active {
+            left: 0;
+        }
+        .sty-button-show-menu {
+            position: absolute;
+            top: 2em;
+            right: -7em;
+            .sty-cont-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10em;
+                height: 10em;
+                background-color: $color-brand-6;
+                border-radius: 50%;
+                &.active {
+                    .sty-icon {
+                        transform: rotate(-180deg);
+                    }
+                }
+                .sty-icon {
+                    width: 6em;
+                    height: 6em;
+                    transition: 0.2s all ease;
+                    path,
+                    polygon {
+                        fill: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+body {
+    @extend #sty-font-n-12;
+}
+a:hover{
+    text-decoration: unset;
+    color: $color-brand-6 !important;
+}
+hr{
+    border-color: $color-gray-5;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.sty-hide-element{
+    display: none;
+}
+
+/*JUSTIFY*/
+.sty-justify-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sty-justify-left{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.sty-padding-side-0{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sty-u-load{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: $z-nivel-100;
+    background-color: $color-white-0-1;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 15em;
+        height: 15em;
+    }
+    &.show{
+        display: flex;
+        animation: showLoad 0.2s;
+    }
+    &.hide{
+        display: flex;
+        animation: hideLoad 0.2s;
+    }
+}
+@keyframes showLoad{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes hideLoad{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+    // .rootElementLoaderClass{
+    //     position: fixed;
+    //     left: 0px;
+    //     top: 0px;
+    //     right: 0px;
+    //     bottom: 0px;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 10001;
+    //     background: url('/static/img/favicons/app/load.svg')
+    //     50% 50% no-repeat #13162d;
+    //     background-size: 15em 15em;
+    //     animation: load 1.2s;
+    //     transition: 0.2s opacity ease, 0.2s background-color ease;
+    //     animation-fill-mode: forwards;
+    // }
+    // @keyframes load{
+    //     0%{
+    //         background-color: $color-brand-1;
+    //     }
+    //     30%{
+    //         opacity: 1;
+    //     }
+    //     90%{
+    //         opacity: 0;
+    //     }
+    //     100%{
+    //         opacity: 0;
+    //         background-color: $color-black-1;
+    //     }
+    // }
+
+.elementLoaderRequestClass{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10001;
+    background: url('/static/img/favicons/app/load.svg') 
+    50% 50% no-repeat #13162d;
+    animation: load 2.2s;
+    animation-iteration-count: infinite;
+}
+@keyframes loadRequest{
+    0%{
+        background-color: $color-brand-1;
+    }
+    30%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        background-color: $color-black-1;
+    }
+}
+
+.sty-hide-resp-1{
+    display: block;
+}
+.sty-show-resp-1{
+    display: none;
+}
+@media (max-width: $resp-cell-max){
+    .sty-hide-resp-1{
+        display: none;
+    }
+    .sty-show-resp-1{
+        display: block;
+    }
+}

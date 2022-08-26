@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default (x => {\n  var parts = x.toString().split(\".\");\n  parts[0] = parts[0].replace(/\\B(?=(\\d{3})+(?!\\d))/g, \",\");\n  return parts.join(\".\");\n});","map":null,"metadata":{},"sourceType":"module"}

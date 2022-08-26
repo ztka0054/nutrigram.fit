@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default (function (s) {\n  if (typeof s !== 'string') return '';\n  return s.charAt(0).toUpperCase() + s.slice(1);\n});","map":null,"metadata":{},"sourceType":"module"}

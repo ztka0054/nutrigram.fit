@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { map } from \"lodash\";\n\nvar cleaner = function cleaner(object) {\n  var values = map(Object.entries(object), function (element) {\n    if (element[1] == null) return [element[0], \"\"];else return element;\n  });\n  return Object.fromEntries(values);\n};\n\nexport default cleaner;","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import moment from \"moment\";\n\nvar fixDate = function fixDate(date) {\n  return moment(date.replace(\"Z\", \"\"));\n};\n\nexport default fixDate;","map":null,"metadata":{},"sourceType":"module"}

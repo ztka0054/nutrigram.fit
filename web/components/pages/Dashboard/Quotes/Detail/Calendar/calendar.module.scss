@@ -1,0 +1,172 @@
+@import "../../../../../../scss/variables";
+@import "../../../../../../scss/components/fonts";
+
+.contCalendar{
+    @extend #sty-font-b-30;
+    width: 480px;
+    border-radius: 1em;
+    padding: 1.5em;
+    border: 1px solid $color-gray-5;
+    flex-shrink: 0;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .date{
+            text-transform: lowercase;
+        }
+    }
+    
+    .contArrow{
+        display: flex;
+    }
+    .arrow{
+        cursor: pointer;
+        &:not(:last-child){
+            margin-right: 1em;
+        }
+        transition: 0.2s background-color ease-in-out;
+        &:hover{
+            background-color: $color-brand-2;
+        }
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $color-gray-5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .contAllCalendar{
+        margin-top: 3em;
+    }
+    .contNames{
+        @extend #sty-font-n-26;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 12px;
+        margin-bottom: 1.5em;
+        .name{
+            user-select: none;
+            text-align: center;
+        }
+    }
+    .contDays{
+        @extend #sty-font-n-26;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 12px;
+        .day{
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $color-white-0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.2s ease-in-out;
+            .changeIcon{
+                position: absolute;
+                display: none;
+                bottom: -0.1em;
+                right: 0;
+                width: 1em;
+                height: 1em;
+                &.block{
+                    display: block;
+                }
+                svg{
+                    path{
+                        fill: $color-brand-6;
+                    }
+                }
+            }
+            &.select{
+                background-color: $color-brand-1 !important;
+                color: $color-white-0;
+            }
+            &.changes{
+                border: solid 1px $color-brand-4;
+            }
+            &.today{
+                border: 3px solid $color-brand-6;
+                background-color: $color-brand-3;
+            }
+            &.disabled{
+                cursor: not-allowed;
+                background-color: $color-gray-5;
+                color: $color-brand-7;
+                &:hover{
+                    background-color: $color-gray-5;
+                }
+            }
+            &.quotes{
+                border: solid 1px $color-brand-4;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 0.8em;
+                    height: 0.8em;
+                    border-radius: 50%;
+                    background-color: $color-brand-4;
+                    top: -0.1em;
+                    right: 0;
+                }
+            }
+            &:hover{
+                background-color: $color-brand-2;
+            }
+        }
+    }
+    .contSquedule{
+        width: 100%;
+        margin-top: 1.5em;
+        button{
+            @extend #sty-font-n-26;
+            width: 100%;
+            padding: 0.7em 1em;
+            background-color: $color-brand-3;
+            border-style: none;
+            border-radius: 0.5em;
+            transition: background-color 0.2s ease-in-out;
+            &:hover{
+                background-color: $color-brand-2;
+            }
+        }
+    }
+}
+
+.loadCalendar{
+    width: 100%;
+    height: 17em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .iconLoad{
+        animation: spin 2s linear infinite;
+        svg{
+            width: 2em;
+            height: 2em;
+            path{
+                stroke: $color-gray-4;
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

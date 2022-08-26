@@ -1,0 +1,74 @@
+.sty-contt-category {
+    margin-top: 2em;
+}
+
+.sty-tab-equivalents {
+    margin-top: 3em;
+    margin-bottom: 4.5em;
+    padding: 0 2.5em;
+    min-width: 100%;
+    .sty-title {
+        // display: grid;
+        //grid-gap: -0.2em;
+        // grid-template-columns: repeat(21, 1fr);
+        & th {
+            padding: 1em 1em;
+            &.title {
+                @extend #sty-font-b-18;
+                border: solid 0.05em $color-black-1;
+                // grid-column: 1 / 6;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+            }
+            &.feature {
+                user-select: none;
+                @extend #sty-font-b-14;
+                background-color: $color-brand-7;
+                border: solid 0.02em $color-black-1;
+
+                text-align: center;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                .text-f {
+                    writing-mode: vertical-rl;
+                    transform: rotate(180deg);
+                }
+            }
+            // height: 3em;
+        }
+    }
+    .sty-food {
+        // display: grid;
+        //grid-gap: -0.2em;
+        // grid-template-columns: repeat(21, 1fr);
+        & th {
+            &.name {
+                @extend #sty-font-b-18;
+                border: solid 0.01em $color-black-1;
+                grid-column: 1 / 6;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                text-align: left;
+                padding: 0 1em;
+            }
+            &.value {
+                @extend #sty-font-b-16;
+                background-color: $color-white-0;
+                border: solid 0.01em $color-black-1;
+                padding: 1em 0;
+                text-align: center;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                .text-v {
+                    // writing-mode: vertical-rl;
+                    // transform: rotate(180deg);
+                }
+            }
+            // height: 3em;
+        }
+    }
+}

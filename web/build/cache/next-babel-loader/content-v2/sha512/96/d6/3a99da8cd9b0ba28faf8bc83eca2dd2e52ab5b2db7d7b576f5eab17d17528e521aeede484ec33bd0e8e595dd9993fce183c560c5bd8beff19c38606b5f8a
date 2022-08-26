@@ -1,0 +1,1 @@
+{"ast":null,"code":"// export const BASE_PATH = \"http://localhost:1337\";\nexport var DEFAULTLANG = \"es\";\nexport var TOKEN = \"nutri_token\";\nexport var LOCALE = \"locale\";\nexport var CURRENCY = \"currency\";\nexport var PIC = \"picture\";\nexport var ID = \"id\";","map":null,"metadata":{},"sourceType":"module"}

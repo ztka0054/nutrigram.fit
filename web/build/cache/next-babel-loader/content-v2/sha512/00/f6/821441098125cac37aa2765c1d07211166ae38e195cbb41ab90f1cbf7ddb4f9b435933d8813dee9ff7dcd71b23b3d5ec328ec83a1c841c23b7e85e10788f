@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const difficult = [{\n  name: \"select_diff_1\",\n  id: 0\n}, {\n  name: \"select_diff_2\",\n  id: 1\n}, {\n  name: \"select_diff_3\",\n  id: 2\n}];","map":null,"metadata":{},"sourceType":"module"}

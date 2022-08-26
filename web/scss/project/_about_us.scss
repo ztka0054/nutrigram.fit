@@ -1,0 +1,121 @@
+
+.sty-aboutus{
+    .sty-about-cont-1{
+        margin-top: 10em;
+    }
+    .sty-card{
+        position: relative;
+        padding: 7em 4em 8em 4em;
+        margin-bottom: 9em;
+        -webkit-box-shadow: 2px 2px 20px -2px rgba(0,0,0,0.1);
+        -moz-box-shadow: 2px 2px 20px -2px rgba(0,0,0,0.1);
+        box-shadow: 2px 2px 20px -2px rgba(0,0,0,0.1);
+        &:hover{
+            .sty-cont-icon{
+                background-color: $color-brand-6;
+            }
+        }
+        .sty-cont-icon{
+            position: absolute;
+            top: -4.5em;
+            right: 0;
+            width: 9em;
+            height: 9em;
+            border-radius: 5em;
+            background-color: $color-brand-2;
+            transition: 0.2s background-color ease;
+        }
+        .sty-icon{
+            width: 5em;
+            height: 5em;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .sty-title{
+            @extend #sty-font-c-b-35;
+            color: $color-gray-1;
+            margin-bottom: 0.8em;
+        }
+        .sty-data{
+            @extend #sty-font-n-25;
+            color: $color-gray-6;
+        }
+    }
+
+    .sty-about-cont-4-1{
+        margin-top: 4em;
+        margin-bottom: 5em;
+    }
+    .sty-about-cont-4-2{
+        margin-bottom: 1.5em;
+    }
+    .sty-about-cont-4-3{
+        margin-top: 4em;
+    }
+
+    .sty-card-p-1{
+        padding-bottom: 3em;
+        &.sty-1{
+            background-color: $color-white-1;
+            border: 0.05em solid $color-white-1;
+            .sty-title{
+                background-color: $color-brand-2;
+            }
+        }
+        &.sty-2{
+            background-color: $color-white-0;
+            border: 0.05em solid $color-brand-3;
+            .sty-title{
+                background-color: $color-brand-3;
+            }
+        }
+        .sty-title{
+            @extend #sty-font-c-b-50;
+            color: $color-white-0;
+            padding: 0.1em 0.2em;
+            margin-bottom: 0.3em;
+        }
+
+        .sty-p-1{
+            @extend #sty-font-c-b-60;
+            color: $color-gray-1;
+            display: inline-block;
+        }
+        .sty-p-2{
+            @extend #sty-font-c-b-40;
+            color: $color-gray-1;
+            display: inline-block;
+        }
+        .sty-fix-margin-1{
+            margin-bottom: 7.5em;
+        }
+        .sty-fix-margin-2{
+            margin-bottom: 19.5em;
+        }
+        .sty-cont-b{
+            margin-top: 1em;
+        }
+        
+        .sty-characteristic{
+            @extend #sty-font-n-32;
+            padding: 1em 0.2em;
+            color: $color-gray-6;
+            &:not(:last-child){
+                border-bottom: 0.05em solid $color-gray-4;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp-cell-max){
+    .sty-aboutus{
+        .sty-about-cont-4-3{
+            .sty-padding-side-0{
+                padding-left: 5em;
+                padding-right: 5em;
+            }
+        }
+    }
+}

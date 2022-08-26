@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 5em;
+}
+
+a {
+    text-decoration: unset !important;
+    color: $black-0;
+    transition: 0.2s color ease;
+    &:hover {
+        color: $color-brand-2 !important;
+    }
+}
+
+.title-1 {
+    @include font(50, "n");
+}
+.title-2 {
+    @include font(40, "n");
+}
+.title-3 {
+    @include font(22, "n");
+}
+.title-4 {
+    @include font(35, "n");
+}
+.title-5 {
+    @include font(28, "n");
+    color: $color-second-1;
+}
+
+.subTitle-1 {
+    @include font(24, "n");
+}
+
+.text-1 {
+    @include font(18, "l");
+}
+.text-2 {
+    @include font(22, "l");
+}
+
+.cont-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.card-1 {
+    .icon {
+        // width: auto;
+        // height: 5em;
+        height: 5em;
+        width: 5em;
+        // svg,
+        // img {
+        //     width: auto;
+        //     height: 100%;
+        // }
+    }
+    .title-3 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    @media (max-width: $min-size) {
+        & {
+            margin-bottom: 4em;
+        }
+    }
+}
+
+.card-2 {
+    padding-right: 3em;
+    .icon {
+        display: inline-block;
+        width: 30%;
+        height: 30%;
+        padding: 0 2em;
+        vertical-align: top;
+    }
+    .data {
+        display: inline-block;
+        width: 70%;
+    }
+    .title {
+        @include font(22, "n");
+        margin-bottom: 0.5em;
+    }
+    @media (max-width: $min-size) {
+        & {
+            display: block;
+            padding-right: 0;
+        }
+        .icon {
+            padding: 0;
+            margin-bottom: 2em;
+            display: block;
+            width: 5em;
+            height: 5em;
+        }
+        .data {
+            display: inline;
+        }
+    }
+}
+
+.card-3 {
+    display: inline-flex;
+    margin: 1em 0;
+    .logo {
+        height: 3em;
+        width: 15em;
+        // img {
+        //     width: auto;
+        //     height: 100%;
+        // }
+    }
+    .logo-1 {
+        height: 4em;
+        width: 4em;
+    }
+    .title-4 {
+        margin-top: 0.6em;
+        margin-bottom: 0.6em;
+    }
+    .cont-info {
+        width: 40%;
+    }
+    .cont-img {
+        width: 60%;
+        // img {
+        //     width: 100%;
+        //     height: auto;
+        // }
+    }
+    .links {
+        list-style: none;
+        padding: 0;
+        display: inline-flex;
+        justify-content: space-between;
+        margin: 0.2em 0;
+        button,
+        a {
+            margin: 1em 0;
+        }
+    }
+    @media (max-width: $min-size) {
+        & {
+            display: block;
+            margin: 2em 0;
+        }
+        .cont-info {
+            width: 100%;
+        }
+        .cont-img {
+            width: 100%;
+            display: none;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.card-4 {
+    min-height: 20em;
+    position: relative;
+    display: inline-flex;
+    border: solid 0.1em $gray-0;
+    padding: 1em;
+    border-radius: 0.2em;
+    transition: 0.1s background-color ease;
+    overflow: hidden;
+    margin-bottom: 3em;
+    &:hover {
+        background-color: $color-brand-1;
+        .title-2 {
+            color: $white-0;
+        }
+        .text-1 {
+            color: $white-0;
+        }
+        .icon {
+            bottom: 0em;
+            .one {
+                fill: $color-second-1;
+            }
+            .two {
+                fill: $color-second-2;
+            }
+        }
+        .dot {
+            div {
+                background-color: $color-brand-2;
+            }
+        }
+    }
+    .icon {
+        position: absolute;
+        width: auto;
+        height: 12em;
+        z-index: 0;
+        right: 0;
+        bottom: -3em;
+        transition: 0.3s all ease;
+        svg {
+            width: auto;
+            height: 100%;
+        }
+        .one {
+            fill: $gray-0;
+        }
+        .two {
+            fill: $gray-1;
+        }
+    }
+    .title-2 {
+        margin-bottom: 0.3em;
+        transition: 0.2s color ease;
+    }
+    .text-1 {
+        position: relative;
+        z-index: 1;
+        transition: 0.2s color ease;
+    }
+    .dot {
+        // width: 1em;
+        // height: 1em;
+        margin-right: 2em;
+        div {
+            width: 1.2em;
+            height: 1.2em;
+            border-radius: 50%;
+            background-color: $gray-0;
+            transition: 0.2s background-color ease;
+        }
+    }
+}
+
+.card-5 {
+    cursor: pointer;
+    border-radius: 0.2em;
+    border: solid $gray-0 0.1em;
+    padding: 3em 2em;
+    display: flex;
+    object-position: center;
+    justify-content: center;
+    transition: 0.2s all ease;
+    &:hover {
+        border-color: $color-brand-2;
+    }
+    &.active {
+        background-color: $color-second-1;
+        border-color: $color-second-1;
+        color: $white-0;
+        .icon-card {
+            background-color: $white-0;
+        }
+    }
+    .icon-card {
+        height: 8em;
+        width: 8em;
+        border-radius: 50%;
+        margin-bottom: 2em;
+        margin: auto;
+        padding: 10% 0;
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .tag {
+        margin-top: 0.5em;
+        @include font(24, "l");
+    }
+}
+
+.develop-section {
+    .icon-section {
+        width: 60%;
+        height: auto;
+        margin: auto;
+    }
+    .icon-section-1 {
+        width: 40%;
+        height: auto;
+        margin: auto;
+    }
+}

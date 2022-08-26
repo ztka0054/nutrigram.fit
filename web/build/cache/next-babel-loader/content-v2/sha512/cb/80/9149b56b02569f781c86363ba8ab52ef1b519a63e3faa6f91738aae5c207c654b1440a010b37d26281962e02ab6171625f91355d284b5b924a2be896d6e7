@@ -1,0 +1,1 @@
+{"ast":null,"code":"import moment from \"moment\";\n\nvar FormatUTC = function FormatUTC(date) {\n  return moment(date).format(\"YYYY-MM-DD\");\n};\n\nexport default FormatUTC;","map":null,"metadata":{},"sourceType":"module"}

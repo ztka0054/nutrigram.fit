@@ -1,0 +1,30 @@
+{
+    "required": "Required field",
+    "email must be a valid email": "Invalid email format",
+    "format_password": "It must contain minimum 8 characters, with at least one number and one special character",
+
+    "incomplete_number": "Incomplete number",
+    "invalid_number": "Wrong number",
+    "incorrect_cvc": "Wrong cvc",
+    "invalid_expiry_month": "Invalid expiration month",
+    "invalid_expiry_year": "Invalid expiration year",
+
+    "pay_message_1": "Subscription successful",
+
+    "message_1": "Saved successfully!",
+    "message_email_1": "Message sent to the email provided",
+    "must_accept_terms": "Must Accept Terms and Conditions",
+    "array_ingredients": "You must add at least one ingredient",
+    "array_portions": "You must add at least one type of portion",
+    "not_assigned": "Not assigned",
+    "without_assigned_plan": "Without any assigned plan",
+    "without_assigned_menu": "Without any assigned menu",
+    "no_plan": "No plan",
+    "available_patients": "You have # patients available in your current plan",
+    "unavailable_patients": "Do not count with more patients available with your current plan",
+    "success_request": "Successful request, an administrator will review the request and give an answer",
+    "menu_sent": "Menu sent",
+    "fields_language": "You must complete the fields of a language",
+    "unexpected_error": "Oops! Something unexpected happened",
+    "without_image": "Without image"
+}

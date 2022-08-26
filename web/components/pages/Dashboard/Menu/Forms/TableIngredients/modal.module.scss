@@ -1,0 +1,149 @@
+@import "../../../../../../scss/variables";
+@import "../../../../../../scss/components/fonts";
+
+.content {
+    padding: 0 2em;
+    .name {
+        @extend #sty-font-b-30;
+        color: $color-brand-1;
+        margin-bottom: 0.8em;
+    }
+    .contSections {
+        display: flex;
+        justify-content: space-between;
+        .contLeft {
+            width: 40%;
+        }
+        .contRight {
+            width: 55%;
+        }
+    }
+    .contPicture {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        border-radius: 2em;
+        overflow: hidden;
+        background-color: $color-brand-7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .tagPicture {
+            @extend #sty-font-b-24;
+            color: $color-brand-6;
+        }
+        .picture {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.contDataRow {
+    margin-top: 1em;
+    .titleIngredients {
+        @extend #sty-font-b-28;
+        color: $color-brand-2;
+        margin-bottom: 0.5em;
+    }
+}
+.contIngredients {
+    .ingredient {
+        @extend #sty-font-n-22;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 0.3em;
+        }
+        .dot {
+            position: absolute;
+            border-bottom: dotted 0.2em $color-brand-3;
+            width: 100%;
+            float: left;
+            height: 0.2em;
+            z-index: 0;
+            top: 50%;
+            transform: translateY(-0.1em);
+        }
+        .nameIngredient {
+            background-color: $color-white-0;
+            padding-right: 0.5em;
+            width: fit-content;
+            max-width: 45%;
+            z-index: 1;
+        }
+        .valueIngredient {
+            background-color: $color-white-0;
+            padding-left: 0.5em;
+            width: fit-content;
+            max-width: 45%;
+            z-index: 1;
+        }
+    }
+}
+
+.contDataRow2 {
+    .titlePrepa {
+        @extend #sty-font-b-28;
+        color: $color-brand-2;
+        margin-bottom: 0.5em;
+    }
+}
+.contSteps {
+    .contStep {
+        .contNumber {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.2em;
+            .number {
+                @extend #sty-font-b-28;
+                color: $color-brand-4;
+            }
+            .contLine {
+                border-bottom: dotted 0.25px $color-brand-4;
+                width: 100%;
+                float: left;
+                position: relative;
+                display: block;
+                height: 12px;
+                margin: 0 5px 0 5px;
+            }
+        }
+        .instruction {
+            @extend #sty-font-n-20;
+        }
+    }
+}
+
+.contDataInfos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-brand-1;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+    .contDataInfo {
+        @extend #sty-font-b-26;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        &:first-child {
+            padding-right: 2em;
+        }
+        &:last-child {
+            padding-left: 2em;
+        }
+    }
+    .contNameInfo {
+        color: $color-brand-4;
+    }
+}

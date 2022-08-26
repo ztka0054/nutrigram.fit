@@ -1,0 +1,248 @@
+// carousel
+@mixin color-cilcle($color) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 200%;
+    height: 200%;
+    background-image: -webkit-radial-gradient(54.5% -10%, circle closest-corner, rgba(0, 0, 0, 0) 80%, $color 1%);
+    background-image: -ms-radial-gradient(54.5% -10%, circle closest-corner, rgba(0, 0, 0, 0) 80%, $color 1%);
+    background-image: -o-radial-gradient(54.5% -10%, circle closest-corner, rgba(0, 0, 0, 0) 80%, $color 1%);
+    background-image: radial-gradient(54.5% -10%, circle closest-corner, rgba(0, 0, 0, 0) 80%, $color 1%);
+}
+@mixin color-cilcle-small($color) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 800%;
+    height: 800%;
+    background-image: -webkit-radial-gradient(10% 4%, circle closest-corner, rgba(0, 0, 0, 0) 99%, $color 1%);
+    // background-image: -ms-radial-gradient(110% 12%, circle closest-corner, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 600%, $color);
+    // background-image: -o-radial-gradient(110% 12%, circle closest-corner, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 600%, $color);
+    // background-image: radial-gradient(110% 12%, circle closest-corner, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 600%, $color);
+}
+.sty-slide-back-color.back-color-1{
+    @include color-cilcle(#f7f7f7);
+    background-color: #c2dd6d;
+}
+.sty-slide-back-color.back-color-2{
+    @include color-cilcle(#efad8f);
+    background-color: #404040;
+}
+.sty-slide-back-color.back-color-3{
+    @include color-cilcle(#f7f7f7);
+    background-color: #cf1b00;
+}
+.sty-slide-back-color.back-color-4{
+    @include color-cilcle(#f7f7f7);
+    background-color: #aa2222;
+}
+.sty-slide-back-color.back-color-5{
+    @include color-cilcle(#f7f7f7);
+    background-color: #f7c32ce6;
+}
+.sty-slide-back-color.back-color-6{
+    @include color-cilcle(#192B49);
+    background-color: #243736;
+}
+.sty-slide-back-color.back-color-7{
+    @include color-cilcle(#f7f7f7);
+    background-color: #000;
+}
+.sty-slide-back-color.back-color-8{
+    @include color-cilcle(#16375a);
+    background-color: #015c9e;
+}
+.sty-slide-back-color.back-color-9{
+    @include color-cilcle(#f7f7f7);
+    background-color: #2a7cd1;
+}
+.sty-slide-back-color.back-color-10{
+    @include color-cilcle(#161e2a);
+    background-color: #273245;
+}
+.sty-home-carousel-1{
+    .sty-content-carousel-item{
+        position: relative;
+        overflow: hidden;
+    }
+    .sty-font-color-1{
+        color: $color-black-1;
+    }
+    .sty-font-color-2{
+        color: $color-white-1;
+    }
+    .sty-slide-courtain{
+        top: 0;
+        position: absolute;
+        // background-color: blue;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .sty-icon-brand-1{
+        width: 15vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .sty-slide-content-text{
+        z-index: 1;
+    }
+    .sty-slide-content-text.back-color-1{
+        color: $color-brand-1;
+    }
+    .sty-title-brang{
+        @extend #sty-font-b-35;
+        margin-bottom: 0.8em;
+    }
+    .sty-title-description{
+        @extend #sty-font-l-16;
+        letter-spacing: 0.05em;
+        line-height: 1.5em;
+    }
+    .sty-know{
+        @extend #sty-font-b-14;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+    }
+    
+    .sty-slide-cont-all-img{
+        position: relative;
+    }
+    .sty-slider-cont-desk{
+        position: absolute;
+        top: calc(50% - 18vw);
+        right: 0;
+        .sty-movil-desk{
+            height: 22vw;
+            width: auto;
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+    .sty-slider-cont-desk-1{
+        position: absolute;
+        top: calc(50% - 15vw);
+        right: 0;
+        .sty-movil-desk{
+            height: 23vw;
+            width: auto;
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+    .sty-slider-cont-movil{
+        position: absolute;
+        top: calc(50% - 12vw);
+        left: 8em;
+        .sty-movil-img{
+            height: 30vw;
+            width: auto;
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+    .sty-slider-cont-movil-1{
+        position: absolute;
+        top: calc(50% - 19vw);
+        left: 17em;
+        .sty-movil-img{
+            height: 35vw;
+            width: auto;
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+
+    ol{
+        margin-bottom: 3.5em;
+    }
+    .carousel-indicators{
+        li{
+            background-color: $color-brand-6;
+            width: 1.5vw;
+            height: 1.5vw;
+        }
+    }
+
+    @media (max-width: 767px){
+        .sty-slide-back-color.back-color-1{
+            @include color-cilcle-small(#c2dd6d);
+            background-color: #f7f7f7;
+        }
+        .sty-slide-back-color.back-color-2{
+            @include color-cilcle-small(#404040);
+            background-color: #efad8f;
+        }
+        .sty-slide-back-color.back-color-3{
+            @include color-cilcle-small(#cf1b00);
+            background-color: #f7f7f7;
+        }
+        .sty-slide-back-color.back-color-4{
+            @include color-cilcle-small(#aa2222);
+            background-color: #f7f7f7;
+        }
+        .sty-slide-back-color.back-color-5{
+            @include color-cilcle-small(#f7c32ce6);
+            background-color: #f7f7f7;
+        }
+        .sty-slide-back-color.back-color-6{
+            @include color-cilcle-small(#243736);
+            background-color: #192B49;
+        }
+        .sty-slide-back-color.back-color-7{
+            @include color-cilcle-small(#000);
+            background-color: #f7f7f7;
+        }
+        .sty-slide-back-color.back-color-8{
+            @include color-cilcle-small(#015c9e);
+            background-color: #16375a;
+        }
+        .sty-slide-back-color.back-color-9{
+            @include color-cilcle-small(#2a7cd1);
+            background-color: #f7f7f7;
+        }
+        .sty-slide-back-color.back-color-10{
+            @include color-cilcle-small(#273245);
+            background-color: #161e2a;
+        }
+
+        .sty-icon-brand-1{
+            width: 55vw;
+            margin-bottom: 4em;
+        }
+        .style-buttonLink{
+            img{
+                width: 40%;
+                margin-bottom: 1em;
+            }
+        }
+
+        .carousel-indicators{
+            li{
+                background-color: $color-white-1;
+                width: 5vw;
+                height: 5vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.sty-u-u-title {
+    z-index: $z-nivel-0;
+}
+
+.title_select_recipe {
+    @extend #sty-font-b-30;
+    margin-bottom: 1em;
+    color: $color-brand-6;
+    width: 100%;
+    text-align: right;
+}

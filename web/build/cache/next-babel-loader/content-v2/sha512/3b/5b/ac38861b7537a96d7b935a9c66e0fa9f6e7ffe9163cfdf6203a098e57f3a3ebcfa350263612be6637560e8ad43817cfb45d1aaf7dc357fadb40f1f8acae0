@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { toast } from 'react-toastify';\nexport let message_1 = message => {\n  toast(message, {\n    className: 'toast-container',\n    closeButton: false,\n    autoClose: 5000\n  });\n};","map":null,"metadata":{},"sourceType":"module"}

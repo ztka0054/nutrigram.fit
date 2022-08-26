@@ -1,0 +1,58 @@
+.radio-content {
+    display: inline-flex;
+    align-items: center;
+    margin: 2em 0;
+    .tag {
+        margin-left: 0.7em;
+        @extend #sty-font-n-26;
+    }
+}
+
+.radio-1 {
+    position: relative;
+    height: 3em;
+    width: 3em;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.05em solid #979797;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        display: none;
+    }
+
+    .input_inside {
+        opacity: 0;
+        transition: all 0.2s ease-out;
+        height: 2em;
+        width: 2em;
+        background-color: $color-brand-3;
+        border-radius: 50%;
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
+        border: 0.05em solid $color-gray-3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.arrow::after {
+            position: absolute;
+            content: "";
+            transform: rotate(45deg) scale(1);
+            opacity: 1;
+            width: 0.5em;
+            height: 1em;
+            border: solid $color-white-0;
+            border-width: 0 0.3em 0.3em 0;
+        }
+    }
+
+    &.active {
+        .input_inside {
+            opacity: 1;
+        }
+    }
+}

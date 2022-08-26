@@ -1,0 +1,15 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/components/fonts";
+
+.error {
+    display: block;
+    @extend #sty-font-l-16;
+    color: $color-brand-4;
+    position: absolute;
+    bottom: -1.4em;
+    width: 100%;
+    text-align: right;
+    &.active {
+        display: block;
+    }
+}

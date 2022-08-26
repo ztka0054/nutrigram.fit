@@ -1,0 +1,1 @@
+{"ast":null,"code":"const getOffset = (el, compesationX = 0, compesationY = 100) => {\n  const rect = el.getBoundingClientRect();\n  return {\n    left: rect.left + window.scrollX - compesationX,\n    top: rect.top + window.scrollY - compesationY\n  };\n};\n\nexport default getOffset;","map":null,"metadata":{},"sourceType":"module"}

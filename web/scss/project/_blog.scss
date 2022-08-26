@@ -1,0 +1,194 @@
+/* Blog */
+.sty-blog{
+    .sty-cont-blog-1{
+        margin-top: 4em;
+        margin-bottom: 6em;    
+    }
+    .sty-card-blog{
+        position: relative;
+        padding: 3em 4em;
+        margin-bottom: 4em;
+        -webkit-box-shadow: 2px 2px 20px -2px rgba(0,0,0,0.1);
+        -moz-box-shadow: 2px 2px 20px -2px rgba(0,0,0,0.1);
+        box-shadow: 2px 2px 20px -2px rgba(0,0,0,0.1);
+    }
+    .sty-calendar{
+        position: absolute;
+        width: 10em;
+        min-height: 8em;
+        top:0;
+        right: 0;
+        background-color: $color-brand-2;
+        color: $color-white-1;
+    }
+    .sty-day{
+        @extend #sty-font-b-45;
+        margin-bottom: -0.4em;
+    }
+    .sty-month{
+        @extend #sty-font-n-25;
+    }
+    .sty-cont-pic{
+        width: 100%;
+        height: 20em;
+        border: 0.05em solid $color-gray-4;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .sty-blog-title{
+        margin-top: 1em;
+        @extend #sty-font-c-b-30;
+        line-height: 1.2em;
+        color: $color-gray-1;
+    }
+    .sty-blog-content{
+        @extend #sty-font-n-25;
+        color: $color-gray-3;
+        overflow: hidden;
+    }
+
+    .sty-cont-recent{
+        background-color: $color-white-4;
+        padding: 3em 4em;
+        .sty-cont-tag-1{
+            margin-bottom: 3em;
+        }
+        .sty-cont-ent{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+            transition: 0.2s background-color ease;
+            &:hover{
+                background-color: $color-brand-6;
+                .sty-date{
+                    color: $color-white-5;
+                }
+                .sty-title{
+                    color: $color-white-1;
+                }
+            }
+        }
+        .sty-pic{
+            display: inline-block;
+            width: 15em;
+            height: 15em;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .sty-data{
+            display: inline-block;
+            width: 80%;
+            padding-left: 2.5em;
+            padding-right: 2.5em;
+        }
+        .sty-all-date{
+            margin-bottom: 0.7em;
+        }
+        .sty-icon-c{
+            display: inline-block;
+            width: 2.5em;
+            height: 2.5em;
+            margin-right: 1.5em;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .sty-date{
+            display: inline-block;
+            @extend #sty-font-n-22;
+            color: $color-gray-4;
+        }
+        .sty-title{
+            @extend #sty-font-c-b-28;
+            color: $color-gray-1;
+        }
+    }
+
+    .sty-cont-data-blog{
+        padding-top: 4em;
+        padding-bottom: 5em;
+        width: 100%;
+    }
+    .sty-data-all-blog{
+        position: relative;
+        border: 0.2em solid $color-gray-5;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 2em;
+        .sty-cont-date{
+            background-color: $color-brand-2;
+            position: absolute;
+            top: 44em;
+            left: 0;
+            color: $color-white-1;
+            width: 20em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            .sty-day{
+                @extend #sty-font-b-55;
+            }
+            .sty-month{
+                margin-top: 0.1em;
+                @extend #sty-font-n-35;
+            }
+        }
+        .sty-pic{
+            width: 100%;
+            height: 50em;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .sty-title{
+            @extend #sty-font-c-b-35;
+            color: $color-gray-1;
+        }
+        .sty-cont-data{
+            margin-top: 8em;
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+        .sty-content{
+            @extend #sty-font-n-30;
+            color: $color-gray-6;
+            p{
+                margin-bottom: 1em;
+            }
+        }
+        .sty-content-pic{
+            width: 100%;
+            height: 48em;
+            margin-top: 4em;
+            margin-bottom: 4em;
+            img{
+               width: 100%; 
+               height: 100%;
+               object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp-cell-max){
+    .sty-blog{
+        .sty-data-all-blog{
+            width: 100%;
+        }
+        .sty-data-all-blog{
+            .sty-cont-data {
+                padding-left: 3em;
+                padding-right: 3em;
+            }
+        }
+    }
+}

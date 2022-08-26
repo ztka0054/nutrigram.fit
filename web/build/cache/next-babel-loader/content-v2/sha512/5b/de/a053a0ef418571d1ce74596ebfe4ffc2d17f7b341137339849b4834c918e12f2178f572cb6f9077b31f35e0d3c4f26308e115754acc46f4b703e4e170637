@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { useContext } from \"react\";\nimport { AppContext } from \"../contexts/AppContext\";\n\nvar app = function app() {\n  return useContext(AppContext);\n};\n\nexport default app;","map":null,"metadata":{},"sourceType":"module"}

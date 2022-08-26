@@ -1,0 +1,113 @@
+.sty-login {
+    .sty-card-login {
+        background-color: $color-white-1;
+        padding: 5em 5em 5em 5em;
+        border-radius: 1em;
+    }
+    .sty-title-1 {
+        @extend #sty-font-b-35;
+        margin-bottom: 1em;
+    }
+    .sty-link {
+        @extend #sty-font-b-30;
+    }
+    .sty-cont-link-1 {
+        margin-top: 2em;
+    }
+    .sty-link-1 {
+        @extend #sty-font-n-24;
+        color: $color-brand-1;
+        transition: 0.2s color ease;
+        a {
+            @extend #sty-font-b-24;
+            color: $color-brand-1;
+        }
+        a:hover {
+            @extend #sty-font-b-24;
+        }
+    }
+    .sty-link-1.link:hover {
+        color: $color-brand-6;
+    }
+
+    .sty-card-login-2 {
+        background-color: $color-white-0;
+        padding: 0 0 5em 0;
+        border-radius: 1em;
+        margin-top: 10em;
+        margin-bottom: 10em;
+        &.fix-1 {
+            margin-top: 4em;
+            margin-bottom: 0em;
+        }
+        .sty-card-cont-content {
+            padding: 5em 5em 2em 5em;
+        }
+        .sty-card-title {
+            @extend #sty-font-b-27;
+            color: $color-white-0;
+            background-color: $color-brand-4;
+            border-radius: 0.3em 0.3em 0 0;
+            width: 100%;
+            padding: 0.6em 1.5em;
+        }
+
+        .sty-card-price {
+            position: relative;
+            border: 0.1em solid $color-white-4;
+            min-height: 52em;
+            margin-bottom: 4em;
+            .sty-title {
+                @extend #sty-font-b-32;
+                color: $color-white-0;
+                padding: 0.5em 0.2em;
+                &.sty-color-1 {
+                    background-color: $color-brand-2;
+                }
+                &.sty-color-2 {
+                    background-color: $color-brand-3;
+                }
+                &.sty-color-3 {
+                    background-color: $color-brand-1;
+                }
+                &.sty-color-4 {
+                    background-color: $color-brand-4;
+                }
+                &.sty-color-5 {
+                    background-color: $color-brand-6;
+                }
+            }
+            .sty-cont-tag {
+                padding: 3em 4em;
+            }
+            .blank {
+                height: 7em;
+            }
+            .sty-tag-1 {
+                @extend #sty-font-n-30;
+                color: $color-black-1;
+                margin-bottom: 0.3em;
+            }
+            .sty-cont-button {
+                position: absolute;
+                bottom: 2.5em;
+                width: 100%;
+            }
+            .sty-fix-bu-1 {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp-cell-max) {
+    .sty-login {
+        &.sty-fix-1 {
+            padding-top: 4em;
+            padding-bottom: 10em;
+        }
+        .sty-cont-data {
+            margin-bottom: 4em;
+        }
+    }
+}

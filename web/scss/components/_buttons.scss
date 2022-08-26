@@ -1,0 +1,335 @@
+/* Buttons */
+#sty-transition-1 {
+    transition: 0.2s background-color ease, 0.2s color ease;
+}
+.sty-button-log-1 {
+    @extend #sty-font-b-26;
+    cursor: pointer !important;
+    background-color: $color-white-0;
+    border: 0.09em solid $color-brand-6;
+    padding: 0.31em 1em;
+    border-radius: 0.75em;
+    color: $color-gray-1;
+    box-sizing: border-box;
+    @extend #sty-transition-1;
+}
+.sty-button-log-1:hover {
+    background-color: $color-brand-6-1;
+    color: $color-white-0;
+}
+.sty-button-log-2 {
+    @extend #sty-font-b-26;
+    cursor: pointer !important;
+    background-color: $color-brand-6;
+    border: 0.09em solid $color-brand-6;
+    padding: 0.31em 1em;
+    border-radius: 0.75em;
+    color: $color-white-0;
+    @extend #sty-transition-1;
+}
+.sty-button-log-2:hover {
+    background-color: $color-brand-6-1;
+}
+
+.sty-button-1 {
+    @extend #sty-font-n-32;
+    background-color: $color-brand-6;
+    border-radius: 3em;
+    color: $color-white-0;
+    border: 0 solid;
+    padding: 0.4em;
+    width: 8.5em;
+}
+.sty-button-1:hover {
+    @extend #sty-transition-1;
+    background-color: $color-brand-6-1;
+    color: $color-white-0;
+}
+
+.sty-button-2 {
+    @extend #sty-font-n-32;
+    background-color: $color-brand-5;
+    border-radius: 3em;
+    color: $color-brand-1;
+    border: 0 solid;
+    padding: 0.4em;
+    width: 8.5em;
+}
+.sty-button-2:hover {
+    @extend #sty-transition-1;
+    background-color: $color-brand-6-1;
+    color: $color-white-0;
+}
+
+.sty-button-3 {
+    @extend #sty-font-n-32;
+    background-color: $color-white-0;
+    border-radius: 3em;
+    color: $color-gray-1;
+    border: 0.09em solid $color-brand-6;
+    padding: 0.38em;
+    width: 8.5em;
+}
+.sty-button-3:hover {
+    @extend #sty-transition-1;
+    background-color: $color-brand-6-1;
+    color: $color-white-0;
+}
+
+.sty-button-app {
+    width: 20em;
+    height: auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.sty-button-sec-1 {
+    @extend #sty-font-b-30;
+    background-color: $color-brand-6;
+    color: $color-white-1;
+    border: unset;
+    border-radius: 0.2em;
+    width: 100%;
+    padding: 0.3em 0.5em;
+}
+.sty-button-sec-1:hover {
+    background-color: $color-brand-6-1;
+}
+
+.sty-button-mrgin-1 {
+    margin-top: 3em;
+}
+
+.sty-button-right {
+    margin-right: 1em;
+}
+
+.sty-button-dash-1 {
+    @extend #sty-font-n-27;
+    color: $color-white-0;
+    background-color: $color-brand-2;
+    border-radius: 0.18em;
+    border: unset;
+    padding: 0.4em 1em;
+    transition: 0.2s background-color ease;
+    &:hover {
+        background-color: $color-brand-6;
+    }
+    &:disabled {
+        background-color: $color-gray-1;
+    }
+    &.color-1 {
+        &:hover {
+            background-color: $color-brand-1;
+        }
+    }
+    &.color-2 {
+        background-color: $color-brand-6;
+        &:hover {
+            background-color: $color-brand-6-1;
+        }
+        &:disabled {
+            background-color: $color-gray-5;
+        }
+    }
+    &.color-3 {
+        background-color: $color-brand-1;
+        &:hover {
+            background-color: $color-brand-2;
+        }
+        &:disabled {
+            background-color: $color-gray-5;
+        }
+    }
+    &.color_3 {
+        &:hover {
+            background-color: $color-brand-4;
+        }
+    }
+    &.fix-1 {
+        &:not(:last-child) {
+            margin-bottom: 0.8em;
+        }
+        .sty-tag {
+            min-width: 8em;
+        }
+    }
+    &.fix-2 .sty-tag {
+        min-width: 5em;
+    }
+    &.fix-m-r-1 {
+        margin-right: 1em;
+    }
+    &.fix-25 {
+        @extend #sty-font-n-18;
+        width: 100%;
+        .sty-tag {
+            min-width: 0;
+        }
+    }
+    &.fix-24 {
+        @extend #sty-font-n-24;
+        width: 100%;
+        .sty-tag {
+            min-width: 0;
+        }
+    }
+    &.fix-icon {
+        @extend #sty-font-n-18;
+        width: 100%;
+        .sty-tag {
+            min-width: 0;
+        }
+        .sty-icon {
+            margin-right: 0;
+        }
+    }
+    &.fix-icon-1 {
+        @extend #sty-font-n-22;
+        .sty-tag {
+            min-width: 0;
+        }
+        .sty-icon {
+            margin-right: 0;
+        }
+    }
+    .sty-icon {
+        display: inline-block;
+        margin-right: 1em;
+        width: 1.2em;
+        height: 1.2em;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .sty-tag {
+        display: inline-block;
+        min-width: 10em;
+        color: $color-white-0;
+    }
+}
+
+.button_modal_cancel {
+    @extend #sty-font-n-27;
+    color: $color-white-0;
+    background-color: $color-gray-1;
+    border-radius: 0.18em;
+    border: unset;
+    padding: 0.4em 1em;
+    transition: 0.2s background-color ease;
+}
+
+.sty-button-table-1 {
+    @extend #sty-font-b-26;
+    border: unset;
+    border-radius: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: 0.2s bacground-color ease;
+    &:hover.color-1,
+    &:hover.color-2 {
+        background-color: $color-brand-6;
+    }
+    &.color-1 {
+        background-color: $color-brand-2;
+    }
+    &.color-2 {
+        background-color: $color-second-1;
+    }
+    &.margin-1 {
+        margin-right: 0.8em;
+    }
+    .sty-icon {
+        display: inline-block;
+        margin-right: 0.8em;
+        width: 1em;
+        height: 1em;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .sty-tag {
+        display: inline-block;
+        min-width: 2.8em;
+        color: $color-white-0;
+    }
+}
+
+.sty-button-table-2 {
+    @extend #sty-font-b-22;
+    border: unset;
+    border-radius: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    transition: 0.2s bacground-color ease;
+    &:hover.color-1,
+    &:hover.color-2 {
+        background-color: $color-brand-6;
+    }
+    &.color-1 {
+        background-color: $color-brand-4;
+    }
+    &.color-2 {
+        background-color: $color-second-1;
+    }
+    .sty-icon {
+        display: inline-block;
+        width: 1.2em;
+        height: auto;
+        svg {
+            width: 100%;
+            height: 100%;
+            path,
+            polygon {
+                fill: $color-white-0;
+                transition: 0.2s fill ease;
+            }
+        }
+    }
+}
+
+.sty-button-quote-1 {
+    @extend #sty-font-b-25;
+    border: unset;
+    border-radius: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: 0.2s bacground-color ease;
+    width: 100%;
+    &:hover.color-1,
+    &:hover.color-2 {
+        background-color: $color-brand-6;
+    }
+    &.color-1 {
+        background-color: $color-brand-2;
+    }
+    .sty-icon {
+        display: inline-block;
+        margin-right: 0.8em;
+        width: 1em;
+        height: 1em;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .sty-tag {
+        display: inline-block;
+        min-width: 3em;
+        color: $color-white-0;
+    }
+}
+
+@media (max-width: $resp-cell-max) {
+    .sty-button-dash-1 {
+        .sty-tag {
+            min-width: 8em;
+        }
+    }
+}
