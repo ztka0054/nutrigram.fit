@@ -41,9 +41,9 @@ jobs:
         with: 
 
           node-version: ${{ matrix.node-version }} 
-      - name: changing directory 
+     # - name: changing directory 
 
-        run: cd web 
+       # run: cd web 
         
       - name: Install Dependencies 
 
