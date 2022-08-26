@@ -18,9 +18,9 @@ jobs:
 
       AWS_S3_BUCKET: nutrigram.fit 
 
-      AWS_ACCESS_KEY_ID: AKIA4JSCGXTQPM6HDCE7 
+      AWS_ACCESS_KEY_ID: AKIA4JSCGXTQML6AKVUK 
 
-      AWS_SECRET_ACCESS_KEY: an6PfmX+J37ZPDPCS61rRZWhio2dBhkuNoquZ6AS 
+      AWS_SECRET_ACCESS_KEY: AD/N+t4eDgTaHnvYwXJ2yFjM/NuqFEwRDW4Zob7r 
 
       aws-region: us-east-1 # Use your bucket region here
 
@@ -78,7 +78,7 @@ jobs:
 
           # note: use IAM role with limited role for below access-key-id and secret-access-key 
 
-          AWS_ACCESS_KEY_ID: AKIA4JSCGXTQPM6HDCE7
-          AWS_SECRET_ACCESS_KEY: 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
+          AWS_ACCESS_KEY_ID: AKIA4JSCGXTQML6AKVUK
+          AWS_SECRET_ACCESS_KEY: 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
 
           SOURCE_DIR: "web/build/" # build folder
