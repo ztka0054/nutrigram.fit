@@ -1,0 +1,9 @@
+#!binbash
+APP_HOME=/var/www/html/web
+
+if [ -d $APP_HOME ]
+then
+ rm -rf $APP_HOME
+fi
+
+mkdir -p $APP_HOME

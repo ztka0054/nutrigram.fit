@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: build_script/before_install
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: build_script/set_permissions
+      timeout: 300
+      runas: root
+   
