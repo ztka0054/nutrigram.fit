@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 APP_HOME=/var/www/html/web
 
 if [ -d $APP_HOME ]
